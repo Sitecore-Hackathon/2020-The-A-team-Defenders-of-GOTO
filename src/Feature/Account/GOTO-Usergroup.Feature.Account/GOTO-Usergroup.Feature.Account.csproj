@@ -504,6 +504,12 @@
     <Content Include="Views\Feature\Account\MvcOuterLayout.cshtml" />
     <Content Include="Views\Feature\Account\_LoginPartial.cshtml" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Foundation\XConnect\GOTO-Usergroup.Foundation.XConnect\GOTO-Usergroup.Foundation.XConnect.csproj">
+      <Project>{e6f6c3e7-dcfd-4b04-9b25-8f3bf6f4b681}</Project>
+      <Name>GOTO-Usergroup.Foundation.XConnect</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

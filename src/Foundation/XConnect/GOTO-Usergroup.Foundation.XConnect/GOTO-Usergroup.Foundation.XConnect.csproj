@@ -110,6 +110,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants.cs" />
     <Compile Include="Interface\IXConnectService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\XConnectService.cs" />

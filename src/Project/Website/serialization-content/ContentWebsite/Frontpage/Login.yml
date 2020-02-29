@@ -16,9 +16,42 @@ SharedFields:
         <r
           ds="{51C01E26-DB53-4CFE-BD8C-C3512267B215}"
           id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
+          pt="{6462E256-1995-41E6-8A8B-DE7749188D6C}"
           par=""
           ph="content"
-          uid="{4B0F23FF-D7CF-462F-AC9E-EE3B707E381B}" />
+          uid="{4B0F23FF-D7CF-462F-AC9E-EE3B707E381B}">
+          <rls>
+            <ruleset
+              pet="true">
+              <rule
+                name="Specify name..."
+                uid="{2F34039C-41C6-4208-9536-8C82E0931A91}"
+                test="true">
+                <conditions>
+                  <condition
+                    id="{EA0642FA-500B-4B2F-B264-765E771C516F}"
+                    uid="FD9704B3E63B488E886B3CEA170A1C1A" />
+                </conditions>
+              </rule>
+              <rule
+                uid="{00000000-0000-0000-0000-000000000000}"
+                name="Default"
+                test="true">
+                <conditions>
+                  <condition
+                    id="{4888ABBB-F17D-4485-B14B-842413F88732}"
+                    uid="148992183AF64266BF234249789005B9" />
+                </conditions>
+                <actions>
+                  <action
+                    id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                    uid="B39C1B2B7B514135861E3C3E60538EEB"
+                    DataSource="{A319F882-E9E8-408E-BAB2-9B7C1A4302C2}" />
+                </actions>
+              </rule>
+            </ruleset>
+          </rls>
+        </r>
       </d>
     </r>
 Languages:
@@ -26,6 +59,33 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{4B0F23FF-D7CF-462F-AC9E-EE3B707E381B}"
+              s:pt="{6462E256-1995-41E6-8A8B-DE7749188D6C}"
+              s:uid="{4B0F23FF-D7CF-462F-AC9E-EE3B707E381B}">
+              <rls>
+                <ruleset>
+                  <rule
+                    uid="{2F34039C-41C6-4208-9536-8C82E0931A91}"
+                    s:test="true"
+                    s:uid="{2F34039C-41C6-4208-9536-8C82E0931A91}" />
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:test="true"
+                    s:uid="{00000000-0000-0000-0000-000000000000}" />
+                </ruleset>
+              </rls>
+            </r>
+          </d>
+        </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20200229T151652Z

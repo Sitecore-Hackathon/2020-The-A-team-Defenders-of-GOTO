@@ -1,4 +1,5 @@
-﻿using Sitecore.Diagnostics;
+﻿using Sitecore.Analytics;
+using Sitecore.Diagnostics;
 using Sitecore.ExperienceForms.Models;
 using Sitecore.ExperienceForms.Mvc.Models.Fields;
 using Sitecore.ExperienceForms.Processing;
@@ -18,13 +19,20 @@ namespace GOTO_Usergroup.Feature.Account.SubmitActions.LoginUser
         protected override bool Execute(string data, FormSubmitContext formSubmitContext)
         {
 
-            var shortname = ((StringInputViewModel)formSubmitContext.Fields.FirstOrDefault(f => f.Name == "ShortName")).Value;
-            var title = ((StringInputViewModel)formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Title")).Value;
-
-
-            return true;
+            var email = ((StringInputViewModel)formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Username")).Value;
+            var password = ((StringInputViewModel)formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Password")).Value;
+            var user = Login(email, password);
+            if(user==null)
+            {
+                // Login failed
+            }
+            else
+            {
+                // Identify
+                Tracker.Current.Session.IdentifyAs(Foundation.XConnect.Constants.XConnectSourceName, email);
+            }
+            return user != null;
         }
-
 
 
         protected virtual User Login(string userName, string password)
@@ -46,50 +54,11 @@ namespace GOTO_Usergroup.Feature.Account.SubmitActions.LoginUser
             return user;
         }
 
-
-        private bool UsernameOrPasswordFieldIsNull(LoginUserFormFields field)
-        {
-            Assert.ArgumentNotNull(field, nameof(field));
-            return field.Username == null || field.Password == null;
-        }
-
-        private bool UsernameOrPasswordValueIsNull(LoginUserFieldValues values)
-        {
-            Assert.ArgumentNotNull(values, nameof(values));
-            return string.IsNullOrEmpty(values.Username) || string.IsNullOrEmpty(values.Password);
-        }
-
-        private bool AbortForm(FormSubmitContext formSubmitContext)
-        {
-            formSubmitContext.Abort();
-            return false;
-        }
-
         protected override bool TryParse(string value, out string target)
         {
             target = string.Empty;
             return true;
         }
-
-        internal class LoginUserFormFields
-        {
-            public IViewModel Username { get; set; }
-            public IViewModel Password { get; set; }
-
-            public LoginUserFieldValues GetFieldValues()
-            {
-                return new LoginUserFieldValues
-                {
-                    Username = Helper.FieldHelper.GetValue(Username),
-                    Password = Helper.FieldHelper.GetValue(Password)
-                };
-            }
-        }
-
-        internal class LoginUserFieldValues
-        {
-            public string Username { get; set; }
-            public string Password { get; set; }
-        }
+    
     }
 }
