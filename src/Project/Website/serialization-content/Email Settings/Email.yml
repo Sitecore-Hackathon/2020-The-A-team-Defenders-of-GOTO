@@ -1,0 +1,18 @@
+﻿---
+ID: "8622d1a9-a01b-4f56-9202-274ab97f5128"
+Parent: "087e1ea5-6280-4575-9e70-85b588db91b2"
+Template: "7097c01c-bfc2-40a3-aea4-d434b318cfd0"
+Path: /sitecore/system/Settings/Email
+DB: master
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "20200229T214529:637186095299844020Z"
