@@ -1,0 +1,6 @@
+@using Sitecore.ExperienceForms.Mvc.Html
+@model Sitecore.ExperienceForms.Mvc.Models.Fields.StringInputViewModel
+@{ 
+    var id = Sitecore.Context.Item == null ? null : Sitecore.Context.Item["Attendees"];
+}
+<input id="@Html.IdFor(m => Model.Value)" name="@Html.NameFor(m => Model.Value)" type="hidden" value="@id" />

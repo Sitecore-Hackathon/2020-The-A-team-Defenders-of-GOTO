@@ -1,8 +1,8 @@
 ﻿---
-ID: "d814e23c-4445-4e16-9cab-a0769001ebb0"
+ID: "bfd1aac2-2627-480e-bca8-9c7f45bbaedd"
 Parent: "b5350d9a-ceee-4d15-b9ff-797ceacccdc7"
 Template: "a60edcaf-1285-46b5-8380-d790bb8c8708"
-Path: /sitecore/system/Settings/Forms/Field Types/Basic/ItemId
+Path: /sitecore/system/Settings/Forms/Field Types/Basic/MemberListId
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
@@ -10,7 +10,7 @@ SharedFields:
   Value: office/32x32/information.png
 - ID: "12594037-53e5-44c0-ad63-deb52dead374"
   Hint: View Path
-  Value: FieldTemplates/Usergroup/ItemId
+  Value: FieldTemplates/Usergroup/MemberListId
 - ID: "16882a65-d10b-4e9e-9d6a-b13480a34f2d"
   Hint: Model Type
   Value: Sitecore.ExperienceForms.Mvc.Models.Fields.StringInputViewModel,Sitecore.ExperienceForms.Mvc

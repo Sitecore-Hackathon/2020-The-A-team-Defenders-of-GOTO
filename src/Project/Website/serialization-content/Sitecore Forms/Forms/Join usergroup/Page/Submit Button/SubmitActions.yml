@@ -1,0 +1,14 @@
+﻿---
+ID: "a0cec5bf-cc8c-47a1-83b6-7c53d63131e1"
+Parent: "b6baea15-9bce-4ce6-9cb0-75ab7216fbf2"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/Forms/Join usergroup/Page/Submit Button/SubmitActions
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T184900Z

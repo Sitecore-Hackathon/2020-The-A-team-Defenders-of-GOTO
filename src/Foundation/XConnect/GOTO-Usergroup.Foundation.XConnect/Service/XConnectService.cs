@@ -55,6 +55,49 @@ namespace GOTO_Usergroup.Foundation.XConnect.Service
             }
         }
 
+        public virtual async Task<bool> IsSubscribed(string email, Guid listId)
+        {
+            try
+            {
+                using (var client = SitecoreXConnectClientConfiguration.GetClient())
+                {
+                    var contact = await client.GetAsync(new IdentifiedContactReference(Constants.XConnectSourceName, email), new ExpandOptions(ListSubscriptions.DefaultFacetKey)).ConfigureAwait(false);
+
+                    var listSubscriptions = contact.ListSubscriptions() ?? new ListSubscriptions();
+                    return listSubscriptions.Subscriptions.Any(s => s.ListDefinitionId == listId);
+                }
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        public virtual async Task<bool> Unsubscribe(string email, Guid listId)
+        {
+            try
+            {
+                using (var client = SitecoreXConnectClientConfiguration.GetClient())
+                {
+                    var contact = await client.GetAsync(new IdentifiedContactReference(Constants.XConnectSourceName, email), new ExpandOptions(ListSubscriptions.DefaultFacetKey)).ConfigureAwait(false);
+
+                    var listSubscriptions = contact.ListSubscriptions() ?? new ListSubscriptions();
+                    if (listSubscriptions.Subscriptions.Any(s => s.ListDefinitionId == listId))
+                    {
+                        listSubscriptions.Subscriptions.RemoveAll(s => s.ListDefinitionId == listId);
+                        client.SetListSubscriptions(contact, listSubscriptions);
+                        client.Submit();
+                        return true;
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                
+            }
+            return false;
+        }
+
         public virtual async Task<bool> SaveContactDetails(string email, string fullname)
         {
             try

@@ -23,6 +23,18 @@ SharedFields:
           par=""
           ph="content"
           uid="{2826AFBE-8134-4CEA-B614-D8114A1CD61D}" />
+        <r
+          ds="{AD1650F7-0CE9-43C3-98CC-9C330F017AA4}"
+          id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
+          par=""
+          ph="content"
+          uid="{FFF92114-3520-4AEA-ACAD-450B987195FF}" />
+        <r
+          ds="{60026F75-7B64-4CD6-B06B-802EE4B4C362}"
+          id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
+          par=""
+          ph="content"
+          uid="{498C3552-21D8-41B0-90F5-C6D12869A0BD}" />
       </d>
     </r>
 Languages:
