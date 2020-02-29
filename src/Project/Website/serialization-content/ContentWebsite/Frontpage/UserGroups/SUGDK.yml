@@ -1,0 +1,25 @@
+﻿---
+ID: "2df682ab-d4df-441c-953d-5c7b1e97ffbc"
+Parent: "8edae83b-bb11-49ff-831d-7ea394c9738c"
+Template: "b6ef3982-5312-46ca-8934-e3dad6f0d53a"
+Path: /sitecore/content/Frontpage/UserGroups/SUGDK
+DB: master
+SharedFields:
+- ID: "8b6e08ff-4787-4494-a016-2beeed3b08eb"
+  Hint: Title
+  Value: "Sitecore User Group - Denmark"
+- ID: "a62a2f9d-dd67-4b5b-8234-b2ddd18d25d1"
+  Hint: Members
+  Value: "SUGDK-866f5ca6-fe43-4d06-f380-2f2dd40b35f6"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T023251Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

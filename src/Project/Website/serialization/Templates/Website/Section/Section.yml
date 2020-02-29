@@ -1,0 +1,14 @@
+﻿---
+ID: "ff8cf621-66e7-4a07-96e4-5951c477008f"
+Parent: "5979c496-3ced-42a9-8139-74d0501453f7"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/Website/Section/Section
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T022542Z

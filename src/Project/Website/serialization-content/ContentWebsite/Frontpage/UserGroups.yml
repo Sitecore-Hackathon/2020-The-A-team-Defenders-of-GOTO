@@ -1,0 +1,23 @@
+﻿---
+ID: "8edae83b-bb11-49ff-831d-7ea394c9738c"
+Parent: "ec326172-c897-43bb-ac43-57242e31f36f"
+Template: "5979c496-3ced-42a9-8139-74d0501453f7"
+Path: /sitecore/content/Frontpage/UserGroups
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{B6EF3982-5312-46CA-8934-E3DAD6F0D53A}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T023232Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
