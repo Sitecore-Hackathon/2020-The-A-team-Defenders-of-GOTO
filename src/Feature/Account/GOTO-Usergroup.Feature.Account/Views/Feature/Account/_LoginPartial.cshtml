@@ -1,0 +1,26 @@
+﻿@using Sitecore.Mvc
+@if (Request.IsAuthenticated)
+{
+    var fullname = "Hello " + Sitecore.Context.User.Profile.FullName + "!";
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            <a href="UserProfile">@fullname</a>
+        </li>
+        <li style="padding-top: 8px;">
+            @Html.Sitecore().Placeholder("logout")
+        </li>
+    </ul>
+}a
+	else
+	{
+
+<ul class="nav navbar-nav navbar-right">
+    <li>
+        <a href="Login">Login</a>
+    </li>
+    <li>
+        <a href="Register">Register</a>
+    </li>
+</ul>
+
+}

@@ -1,0 +1,39 @@
+﻿@using Sitecore.Mvc
+
+@using Sitecore.ExperienceForms.Mvc.Html
+
+@using Sitecore.Mvc.Analytics.Extensions
+
+@{
+
+    Layout = null;
+
+}
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <title>@Html.Sitecore().Field("title", new { DisableWebEdit = true })</title>
+
+    @Html.Sitecore().VisitorIdentification()
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
+    @Html.RenderFormStyles()
+
+    @Html.RenderFormScripts()
+
+</head>
+
+<body style="padding-top: 70px;">
+
+    @RenderBody()
+
+</body>
+
+</html>
