@@ -15,6 +15,7 @@ using System.Web;
 using Microsoft.Extensions.DependencyInjection;
 using Sitecore.ListManagement.XConnect.Web;
 using Sitecore.Analytics;
+using Sitecore.ExperienceForms.Mvc.Models.Fields;
 
 namespace GOTO_Usergroup.Feature.Usergroup.SubmitActions
 {
@@ -33,14 +34,17 @@ namespace GOTO_Usergroup.Feature.Usergroup.SubmitActions
 
         protected override bool Execute(string data, FormSubmitContext formSubmitContext)
         {
+            var shortname = ((StringInputViewModel)formSubmitContext.Fields.FirstOrDefault(f => f.Name == "ShortName")).Value;
+            var title = ((StringInputViewModel)formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Title")).Value;
+
             var subscriptionService = ServiceLocator.ServiceProvider.GetService<ISubscriptionService>();
             using (new SecurityDisabler())
             {
-                var item = _rootItem.Add(data, _templateId);
+                var item = _rootItem.Add(shortname, _templateId);
                 var membersListId = CreateList($"{data} Members");
-                var organizersListId = CreateList($"{data} Organizers");
+                var organizersListId = CreateList($"{shortname} Organizers");
                 item.Editing.BeginEdit();
-                item["Title"] = data;
+                item["Title"] = title;
                 item["Members"] = membersListId.ToString();
                 item["Organizers"] = organizersListId.ToString();
                 item.Editing.AcceptChanges();
@@ -67,7 +71,7 @@ namespace GOTO_Usergroup.Feature.Usergroup.SubmitActions
                 Id = id.ToString("B"),
                 Name = name,
                 Description = name,
-                Owner = "Administrator"
+                Owner = Sitecore.Context.User.Name
             };
             contactListRepository.Add(newContactList);
             return id;
