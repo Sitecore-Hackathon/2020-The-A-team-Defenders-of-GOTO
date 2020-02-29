@@ -2,6 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Sitecore.Configuration;
 using Sitecore.Data;
+using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 using Sitecore.DependencyInjection;
 using Sitecore.ExperienceForms.Models;
@@ -18,37 +19,47 @@ namespace GOTO_Usergroup.Feature.Usergroup.SubmitActions
     public class CreateEvent : SubmitActionBase<string>
     {
         private TemplateID _templateId;
-        private Item _rootItem;
         private Database _database;
         private IXConnectService _xconnectService;
 
         public CreateEvent(ISubmitActionData submitActionData) : base(submitActionData)
         {
-            _templateId = new TemplateID(new ID(Settings.GetSetting("GOTO-Usergroup.Feature.Usergroup.CreateEvent.TemplateId", "{B6EF3982-5312-46CA-8934-E3DAD6F0D53A}")));
-            _database = Database.GetDatabase(Settings.GetSetting("GOTO-Usergroup.Feature.Usergroup.CreateEvent.Database", "master"));
-            _rootItem = _database.GetItem(new ID(Settings.GetSetting("GOTO-Usergroup.Feature.Usergroup.CreateEvent.RootId", "{8EDAE83B-BB11-49FF-831D-7EA394C9738C}")));
-            
+            _templateId = new TemplateID(new ID(Settings.GetSetting("GOTO-Usergroup.Feature.Usergroup.CreateEvent.TemplateId", "{EB03188C-C8DA-49C5-8A41-9B3AE8DC2A75}")));
+            _database = Database.GetDatabase(Settings.GetSetting("GOTO-Usergroup.Feature.Usergroup.CreateEvent.Database", "master"));            
             _xconnectService = ServiceLocator.ServiceProvider.GetService<IXConnectService>();
         }
 
         protected override bool Execute(string data, FormSubmitContext formSubmitContext)
         {
-            var shortname = ((StringInputViewModel)formSubmitContext.Fields.FirstOrDefault(f => f.Name == "ShortName")).Value;
+            var itemId = ((StringInputViewModel)formSubmitContext.Fields.FirstOrDefault(f => f.Name == "ItemId")).Value;
+            var host = ((StringInputViewModel)formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Host")).Value;
             var title = ((StringInputViewModel)formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Title")).Value;
-            
+            var description = ((MultipleLineTextViewModel)formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Description")).Value;
+            var date = ((DateViewModel)formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Date")).Value;
+            var address = ((MultipleLineTextViewModel)formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Address")).Value;
+
             using (new SecurityDisabler())
             {
-                var item = _rootItem.Add(shortname, _templateId);
-                var membersListId = _xconnectService.CreateList($"{shortname} Members");
-                var organizersListId = _xconnectService.CreateList($"{shortname} Organizers");
+                var rootItem = _database.GetItem(itemId);
+                var item = rootItem.Add(title, _templateId);
+                var attendeesListId = _xconnectService.CreateList($"{item.Name} - {title} Attendees");
                 item.Editing.BeginEdit();
+                item["Host"] = host;
                 item["Title"] = title;
-                item["Members"] = membersListId.ToString();
-                item["Organizers"] = organizersListId.ToString();
+                item["Description"] = description;
+                item["Date"] = Sitecore.DateUtil.ToIsoDate(date.Value);
+                item["Address"] = address;
+                item["Attendees"] = new ID(attendeesListId).ToString();
                 item.Editing.AcceptChanges();
 
-                _xconnectService.SubscribeContact("test", "test", new List<Guid> { membersListId, organizersListId });
+                _xconnectService.SubscribeContact("test", "test", new List<Guid> { attendeesListId });
             }
+            return true;
+        }
+
+        protected override bool TryParse(string value, out string target)
+        {
+            target = string.Empty;
             return true;
         }
     }

@@ -9,6 +9,22 @@ SharedFields:
   Hint: __Masters
   Type: TreelistEx
   Value: 
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{D390C691-8911-4EC1-AD8F-41EAC0A8D1E5}">
+        <r
+          ds="{747EB956-C4AD-4169-8305-90AF3E21C523}"
+          id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
+          par=""
+          ph="content"
+          uid="{2826AFBE-8134-4CEA-B614-D8114A1CD61D}" />
+      </d>
+    </r>
 Languages:
 - Language: en
   Versions:

@@ -43,8 +43,8 @@ namespace GOTO_Usergroup.Feature.Usergroup.SubmitActions
                 var organizersListId = _xconnectService.CreateList($"{shortname} Organizers");
                 item.Editing.BeginEdit();
                 item["Title"] = title;
-                item["Members"] = membersListId.ToString();
-                item["Organizers"] = organizersListId.ToString();
+                item["Members"] = new ID(membersListId).ToString();
+                item["Organizers"] = new ID(organizersListId).ToString();
                 item.Editing.AcceptChanges();
 
                 _xconnectService.SubscribeContact("test", "test", new List<Guid> { membersListId, organizersListId });
