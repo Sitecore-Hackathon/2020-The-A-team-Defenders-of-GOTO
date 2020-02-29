@@ -1,0 +1,14 @@
+﻿---
+ID: "34cd571e-99c1-41ff-a062-d4bad55982ad"
+Parent: "fb771239-8633-4526-8a08-8d44910b636b"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/system/Settings/Email/Instance Tasks/Content Management Primary/Message Statistics
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170410T141815Z

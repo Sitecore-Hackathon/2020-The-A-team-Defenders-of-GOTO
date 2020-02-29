@@ -1,0 +1,18 @@
+﻿---
+ID: "c383b2aa-d653-48a7-b85f-52f4d773ab4a"
+Parent: "fd347b2c-d2f7-4d73-86ce-e54e773a6405"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/system/Settings/Email/Instance Tasks/Processing
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150430T133446Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

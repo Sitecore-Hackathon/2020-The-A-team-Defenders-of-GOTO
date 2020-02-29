@@ -9,7 +9,7 @@
 
 <div>
     <ul class="list-group" style="max-width:400px">
-        <li class="list-group-item active font-weight-bold">Members (@organizers.Count())</li>
+        <li class="list-group-item active font-weight-bold">Organizers (@organizers.Count())</li>
         @foreach (var organizer in organizers)
         {
             <li class="list-group-item"><a href="mailto:@organizer.Email">@organizer.FirstName @organizer.LastName</a></li>
