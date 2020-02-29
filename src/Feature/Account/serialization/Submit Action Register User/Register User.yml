@@ -24,7 +24,7 @@ Languages:
       Value: 20200229T053726Z
     - ID: "47837625-b3d9-46f1-a73b-ff13dd1c8b25"
       Hint: Error Message
-      Value: "Register user failed!"
+      Value: Register user failed. Please try again, and check that you're no already registered.
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
