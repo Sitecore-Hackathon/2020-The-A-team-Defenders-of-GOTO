@@ -1,0 +1,39 @@
+﻿---
+ID: "bf03cb73-1f03-4034-9418-21214a2aa1fe"
+Parent: "34cd571e-99c1-41ff-a062-d4bad55982ad"
+Template: "70244923-fa84-477c-8cbd-62f39642c42b"
+Path: /sitecore/system/Settings/Email/Instance Tasks/Content Management Primary/Message Statistics/Older
+DB: master
+SharedFields:
+- ID: "50be51f8-746d-4dc2-9c3b-b14abc5ce9b7"
+  Hint: Schedule
+  Value: "20090326T112200|20990426T112200|127|24:00:00"
+- ID: "62e64dbb-0a39-4dd7-ba05-7bd08c5404e0"
+  Hint: Command
+  Value: "{0D694894-35D3-43C2-972C-A3C1224FA8EB}"
+- ID: "70893ef5-98e6-4721-844a-c364d0d9e48e"
+  Hint: Items
+  Value: 
+- ID: "a2c0c7a2-697d-40e2-9516-54e0c2d6028e"
+  Hint: Async
+  Type: checkbox
+  Value: 1
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: 
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20090320T102200
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

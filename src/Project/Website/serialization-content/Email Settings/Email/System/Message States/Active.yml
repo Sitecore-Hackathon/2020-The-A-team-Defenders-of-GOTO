@@ -1,0 +1,18 @@
+﻿---
+ID: "7d4fe519-960b-4a10-96ab-4273f3ea6e31"
+Parent: "06ce59fc-d919-4c75-adfd-a52e2a0caa48"
+Template: "1930bbeb-7805-471a-a3be-4858ac7cf696"
+Path: /sitecore/system/Settings/Email/System/Message States/Active
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120130T105915
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

@@ -1,0 +1,29 @@
+﻿---
+ID: "641644a4-cd45-4134-96e9-84c430c8c536"
+Parent: "1f01dd94-cedf-43f7-bfb4-ed1b6bed7e42"
+Template: "76d41116-0577-4def-8435-a622e9e06a8f"
+Path: /sitecore/system/Settings/Email/Common Text/Address Changed Confirmation
+DB: master
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Address Changed Confirmation
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20090110T105043
+    - ID: "5d432d0e-7464-4801-933b-9d2ddc14e4f7"
+      Hint: Comments
+      Value: "The content of a confirmation dialog shown in non-anonymous self-subscription controls."
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "e2236e26-714e-4aa2-8ed2-c782452bf1f4"
+      Hint: Text
+      Value: |
+        The {0} address differs from the one associated with your account.\nIf you continue, the old address will be replaced by the new one.\n\nDo you want to continue?
