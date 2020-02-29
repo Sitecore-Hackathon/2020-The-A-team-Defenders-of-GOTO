@@ -51,5 +51,11 @@ namespace GOTO_Usergroup.Feature.Usergroup.SubmitActions
             }
             return true;
         }
+
+        protected override bool TryParse(string value, out string target)
+        {
+            target = string.Empty;
+            return true;
+        }
     }
 }
