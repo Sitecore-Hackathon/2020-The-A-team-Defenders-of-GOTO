@@ -15,18 +15,18 @@ using System.Linq;
 
 namespace GOTO_Usergroup.Feature.Usergroup.SubmitActions
 {
-    public class CreateUsergroup : SubmitActionBase<string>
+    public class CreateEvent : SubmitActionBase<string>
     {
         private TemplateID _templateId;
         private Item _rootItem;
         private Database _database;
         private IXConnectService _xconnectService;
 
-        public CreateUsergroup(ISubmitActionData submitActionData) : base(submitActionData)
+        public CreateEvent(ISubmitActionData submitActionData) : base(submitActionData)
         {
-            _templateId = new TemplateID(new ID(Settings.GetSetting("GOTO-Usergroup.Feature.Usergroup.CreateUsergroup.TemplateId", "{B6EF3982-5312-46CA-8934-E3DAD6F0D53A}")));
-            _database = Database.GetDatabase(Settings.GetSetting("GOTO-Usergroup.Feature.UsergroupCreateUsergroup..Database", "master"));
-            _rootItem = _database.GetItem(new ID(Settings.GetSetting("GOTO-Usergroup.Feature.Usergroup.CreateUsergroup.RootId", "{8EDAE83B-BB11-49FF-831D-7EA394C9738C}")));
+            _templateId = new TemplateID(new ID(Settings.GetSetting("GOTO-Usergroup.Feature.Usergroup.CreateEvent.TemplateId", "{B6EF3982-5312-46CA-8934-E3DAD6F0D53A}")));
+            _database = Database.GetDatabase(Settings.GetSetting("GOTO-Usergroup.Feature.Usergroup.CreateEvent.Database", "master"));
+            _rootItem = _database.GetItem(new ID(Settings.GetSetting("GOTO-Usergroup.Feature.Usergroup.CreateEvent.RootId", "{8EDAE83B-BB11-49FF-831D-7EA394C9738C}")));
             
             _xconnectService = ServiceLocator.ServiceProvider.GetService<IXConnectService>();
         }
