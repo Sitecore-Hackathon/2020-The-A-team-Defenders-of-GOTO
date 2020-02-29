@@ -4,6 +4,7 @@ using Sitecore.ExperienceForms.Models;
 using Sitecore.ExperienceForms.Processing;
 using Sitecore.ExperienceForms.Processing.Actions;
 using Sitecore.Security.Accounts;
+using Sitecore.Web;
 using System;
 
 
@@ -45,7 +46,6 @@ namespace GOTO_Usergroup.Feature.Account.SubmitActions.RegisterUser
             {
                 return AbortForm(formSubmitContext);
             }
-
             return true;
         }
 

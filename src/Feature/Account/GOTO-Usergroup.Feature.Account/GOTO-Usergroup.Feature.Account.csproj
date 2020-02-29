@@ -487,7 +487,6 @@
     <Compile Include="SubmitActions\RegisterUser\RegisterUserData.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="sitecore\shell\client\Applications\FormsBuilder\Layouts\Actions\RegisterUser.js" />
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
