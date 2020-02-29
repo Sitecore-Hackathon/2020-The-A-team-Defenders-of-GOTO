@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GOTO_Usergroup.Foundation.XConnect.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,5 +14,6 @@ namespace GOTO_Usergroup.Foundation.XConnect.Interface
         Task<bool> IsSubscribed(string email, Guid listId);
         Task<bool> SaveContactDetails(string email, string fullname);
         Guid CreateList(string name);
+        List<Subscriber> GetSubscribersFromList(Guid listId);
     }
 }

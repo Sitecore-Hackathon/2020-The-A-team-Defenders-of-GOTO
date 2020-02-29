@@ -14,6 +14,9 @@ using System.Web;
 using Microsoft.Extensions.DependencyInjection;
 using Sitecore.Security.Accounts;
 using Sitecore.Configuration;
+using Sitecore.ListManagement.Providers;
+using Sitecore.ListManagement.XConnect.Web;
+using GOTO_Usergroup.Foundation.XConnect.Models;
 
 namespace GOTO_Usergroup.Foundation.XConnect.Service
 {
@@ -108,8 +111,8 @@ namespace GOTO_Usergroup.Foundation.XConnect.Service
 
                     fullname = fullname.Trim();
                     var index = fullname.LastIndexOf(' ');
-                    var firstname = index > 0 ? fullname.Substring(0, index - 1) : string.Empty;
-                    var lastname = index > 0 ? fullname.Substring(index) : fullname;
+                    var firstname = index > 0 ? fullname.Substring(0, index) : string.Empty;
+                    var lastname = index > 0 ? fullname.Substring(index + 1) : fullname;
 
                     var personalInfo = contact.Personal() ?? new PersonalInformation();
                     personalInfo.FirstName = firstname;
@@ -155,26 +158,42 @@ namespace GOTO_Usergroup.Foundation.XConnect.Service
             }
         }
 
-        //get contacts (for later)
-        //https://doc.sitecore.com/developers/93/sitecore-experience-manager/en/the-list-manager-api.html
-        //int batchSize = 200; // Size of the batch
-        //string[] facets =
-        //{
-        //    CollectionModel.FacetKeys.PersonalInformation,
-        //    CollectionModel.FacetKeys.ListSubscriptions
-        //}; // Contact facets to retrieve
-        //        var contactListProvider = ServiceLocator.ServiceProvider.GetService<IContactListProvider>();
-        //        var contactProvider = ServiceLocator.ServiceProvider.GetService<IContactProvider>();
-        //        var contactList = contactListProvider.Get(contactListId, cultureInfo);
-        //        var contactBatchEnumerator = contactProvider.GetContactBatchEnumerator(
-        //            contactList,
-        //            batchSize,
-        //             facets);
-        //while (contactBatchEnumerator.MoveNext())
-        //{    
-        //var contacts = contactBatchEnumerator.Current;
-        //        // write your logic here
-        //        contacts.ToList();
-        //}
+        public virtual List<Subscriber> GetSubscribersFromList(Guid listId)
+        {
+            var results = new List<Subscriber>();
+            var batchSize = 200;
+            string[] facets =
+            {
+                CollectionModel.FacetKeys.PersonalInformation,
+                CollectionModel.FacetKeys.EmailAddressList,
+                CollectionModel.FacetKeys.ListSubscriptions
+            };
+            var contactListProvider = ServiceLocator.ServiceProvider.GetService<IContactListProvider>();
+            var contactProvider = ServiceLocator.ServiceProvider.GetService<IContactProvider>();
+            var contactList = contactListProvider.Get(listId, Sitecore.Context.Culture);
+            var contactBatchEnumerator = contactProvider.GetContactBatchEnumerator(contactList, batchSize, facets);
+            while (contactBatchEnumerator.MoveNext())
+            {
+                var contacts = contactBatchEnumerator.Current;
+                foreach (var contact in contacts)
+                {
+                    var email = contact.Emails()?.PreferredEmail?.SmtpAddress;
+
+                    if (!string.IsNullOrWhiteSpace(email))
+                    {
+                        var personal = contact.Personal();
+                        results.Add(new Subscriber
+                        {
+                            Email = email,
+                            FirstName = personal?.FirstName,
+                            LastName = personal?.LastName
+                        });
+                    }
+                }
+            }
+
+            return results;
+        }
+
     }
 }

@@ -9,6 +9,7 @@ using Sitecore.Security.Accounts;
 using Sitecore.Web;
 using System;
 using Microsoft.Extensions.DependencyInjection;
+using GOTO_Usergroup.Foundation.XConnect;
 
 namespace GOTO_Usergroup.Feature.Account.SubmitActions.RegisterUser
 {
@@ -72,6 +73,7 @@ namespace GOTO_Usergroup.Feature.Account.SubmitActions.RegisterUser
                 user.Profile.FullName = name;
                 user.Profile.Save();
 
+                Sitecore.Analytics.Tracker.Current.Session.IdentifyAs(Constants.XConnectSourceName, email);
                 _xconnectService.SaveContactDetails(email, name);
             }
             catch (Exception ex)

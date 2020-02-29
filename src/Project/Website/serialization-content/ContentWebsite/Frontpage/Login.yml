@@ -59,6 +59,26 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{4B0F23FF-D7CF-462F-AC9E-EE3B707E381B}">
+              <p:d />
+            </r>
+            <r
+              uid="{F5C1A2DE-1DD0-4051-AD46-ACC5CFCC6315}"
+              s:ds="{51C01E26-DB53-4CFE-BD8C-C3512267B215}"
+              s:id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
+              s:par=""
+              s:ph="body" />
+          </d>
+        </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20200229T151652Z
