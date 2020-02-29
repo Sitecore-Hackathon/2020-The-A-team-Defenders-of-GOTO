@@ -1,17 +1,17 @@
 ﻿---
-ID: "df9da129-ab7b-40f5-8a4f-e82f514d7d04"
-Parent: "07815ea2-8100-4619-89ce-5e301eb7534a"
+ID: "8ae485bc-4189-4605-a9be-8a0439dfbf49"
+Parent: "1cf940ba-1536-4518-aeef-b0de73928018"
 Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
-Path: /sitecore/layout/Placeholder Settings/Project/Website/navnotauthenticated
+Path: /sitecore/layout/Placeholder Settings/Feature/Navigation/nav
 DB: master
 SharedFields:
 - ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
   Hint: Placeholder Key
-  Value: "nav-not-auth"
+  Value: nav
 - ID: "e391b526-d0c5-439d-803e-17512eae6222"
   Hint: Allowed Controls
   Type: TreelistEx
-  Value: "{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
+  Value: "{5C23CD03-4D9E-4E0A-A1B2-B3B3571F986D}"
 Languages:
 - Language: en
   Versions:
