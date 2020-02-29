@@ -30,7 +30,37 @@ SharedFields:
           id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
           par=""
           ph="createforms"
-          uid="{D5950C1C-F746-4A55-8BCC-AAE87A61B53A}" />
+          uid="{D5950C1C-F746-4A55-8BCC-AAE87A61B53A}">
+          <rls>
+            <ruleset
+              pet="true">
+              <rule
+                name="organizer only"
+                uid="{54379626-67EE-459C-8EC5-E91470D53080}">
+                <conditions>
+                  <condition
+                    id="{61149788-6E2A-4F8F-BB29-5E8D595B6957}"
+                    uid="2DFCAF9922A54A169604F7C419E2AAF6"
+                    FieldName="Organizers" />
+                </conditions>
+              </rule>
+              <rule
+                uid="{00000000-0000-0000-0000-000000000000}"
+                name="Default">
+                <conditions>
+                  <condition
+                    id="{4888ABBB-F17D-4485-B14B-842413F88732}"
+                    uid="70EDCBF382C0452D8635C520D5EE142A" />
+                </conditions>
+                <actions>
+                  <action
+                    id="{25F351A1-712D-45F8-857D-8AD95BB2ACE9}"
+                    uid="9CB9BD2239E34CDAB654B2514A09BCFC" />
+                </actions>
+              </rule>
+            </ruleset>
+          </rls>
+        </r>
         <r
           ds="{AD1650F7-0CE9-43C3-98CC-9C330F017AA4}"
           id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
@@ -82,7 +112,7 @@ SharedFields:
                   <action
                     id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
                     uid="A7E78309F34846E583C7A79AFDA6030C"
-                    DataSource="{60026F75-7B64-4CD6-B06B-802EE4B4C362}" />
+                    DataSource="{AD1650F7-0CE9-43C3-98CC-9C330F017AA4}" />
                 </actions>
               </rule>
             </ruleset>
@@ -116,6 +146,40 @@ SharedFields:
           id="{B1E6B902-E085-45FA-BF1B-CD2B48034E8C}"
           ph="body"
           uid="{2EB865D5-00D8-46C5-88ED-CC92C68ED4D9}" />
+        <r
+          id="{510C62CA-916F-4DB4-B67C-C283CFF37FEC}"
+          ph="body"
+          uid="{EA89A5AE-DA1D-4544-8ADA-DD2A4D3C5683}">
+          <rls>
+            <ruleset
+              pet="true">
+              <rule
+                name="Organizer only"
+                uid="{6B56144E-A872-499A-9B01-8EC8E34F88C6}">
+                <conditions>
+                  <condition
+                    id="{61149788-6E2A-4F8F-BB29-5E8D595B6957}"
+                    uid="6025C0C340AE4283B53FEB6E0F93D3DC"
+                    FieldName="Organizers" />
+                </conditions>
+              </rule>
+              <rule
+                uid="{00000000-0000-0000-0000-000000000000}"
+                name="Default">
+                <conditions>
+                  <condition
+                    id="{4888ABBB-F17D-4485-B14B-842413F88732}"
+                    uid="D33E2E7D358843AF9E3789E24100E497" />
+                </conditions>
+                <actions>
+                  <action
+                    id="{25F351A1-712D-45F8-857D-8AD95BB2ACE9}"
+                    uid="D70D88A46C414257BE6935459C10B74A" />
+                </actions>
+              </rule>
+            </ruleset>
+          </rls>
+        </r>
       </d>
     </r>
 Languages:

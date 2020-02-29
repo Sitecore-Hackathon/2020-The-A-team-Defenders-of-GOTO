@@ -1,0 +1,25 @@
+﻿---
+ID: "b099f630-4442-4af7-87f9-e781100c1c9a"
+Parent: "c273e3df-6256-4e97-ad82-6fefea2779e1"
+Template: "332ab172-c3a3-4a20-a34c-cdae11057608"
+Path: /sitecore/content/Email/Messages/2020/02/29T22043303/Registration complete/Message Root/Footer
+DB: master
+BranchID: "8c18055a-eb1e-4358-bc12-26b4e2568910"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{31F2081F-CFF3-4803-8E8D-300004CC47E1}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "170c5ede-1653-4aaa-8f52-95a275de09fb"
+      Hint: Footer Links
+      Value: 
+    - ID: "203ada9f-bb07-4f39-b53c-65301a538423"
+      Hint: Legal Footer Text
+      Value: Use this area to provide any legal information required by your region’s&nbsp;legislation.
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T220433Z

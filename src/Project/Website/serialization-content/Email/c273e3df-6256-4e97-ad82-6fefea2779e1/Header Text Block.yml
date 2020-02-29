@@ -1,0 +1,29 @@
+﻿---
+ID: "4ab4dae5-7f9f-4ceb-83f5-eb08d91c808a"
+Parent: "c273e3df-6256-4e97-ad82-6fefea2779e1"
+Template: "f7eb69bc-1ded-4e38-96aa-2eecefd78325"
+Path: /sitecore/content/Email/Messages/2020/02/29T22043303/Registration complete/Message Root/Header Text Block
+DB: master
+BranchID: "8c18055a-eb1e-4358-bc12-26b4e2568910"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{B270B2E0-340E-4AF3-9795-4D1F37CDBE44}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T220433Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "cebd4834-076f-4b67-babf-6595394f871c"
+      Hint: Header title
+      Value: Thanks for registering
+    - ID: "f21c2561-35d5-437d-b28f-45473a546272"
+      Hint: Header text
+      Value: "We are going to have so much fun!"
