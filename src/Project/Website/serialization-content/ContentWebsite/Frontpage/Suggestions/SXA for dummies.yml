@@ -1,0 +1,26 @@
+﻿---
+ID: "3e15c449-2e8d-4e42-bd54-c06abc31fcee"
+Parent: "747dd363-3c10-4c0c-81b8-cd3434269446"
+Template: "765f817c-b216-43f6-9e8d-c99bf4527fcb"
+Path: /sitecore/content/Frontpage/Suggestions/SXA for dummies
+DB: master
+SharedFields:
+- ID: "0e9d0dee-00ea-4816-bbf6-db1b42f95684"
+  Hint: Usergroups
+  Type: Multilist
+  Value: "{2DF682AB-D4DF-441C-953D-5C7B1E97FFBC}"
+- ID: "52e6317c-2ef4-4599-957a-00f85e8aa791"
+  Hint: Title
+  Value: SXA for dummies
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T025412Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
