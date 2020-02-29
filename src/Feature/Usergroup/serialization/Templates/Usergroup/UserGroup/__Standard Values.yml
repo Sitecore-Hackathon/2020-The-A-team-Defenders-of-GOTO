@@ -108,6 +108,10 @@ SharedFields:
           id="{5C23CD03-4D9E-4E0A-A1B2-B3B3571F986D}"
           ph="nav"
           uid="{D79CFB28-0E3B-4FBE-9785-31FA1B3E7B06}" />
+        <r
+          id="{510C62CA-916F-4DB4-B67C-C283CFF37FEC}"
+          ph="body"
+          uid="{207D6BAA-FE17-4E59-88A1-59B863E409B3}" />
       </d>
     </r>
 Languages:
