@@ -1,4 +1,5 @@
 ﻿using Sitecore.ExperienceForms.Models;
+using Sitecore.ExperienceForms.Mvc.Models.Fields;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,11 @@ namespace GOTO_Usergroup.Feature.Account.Helper
         public static IViewModel GetFieldById(Guid id, IList<IViewModel> fields)
         {
             return fields.FirstOrDefault(f => Guid.Parse(f.ItemId) == id);
+        }
+
+        public static IViewModel GetFieldValueByName(string fieldName, IList<IViewModel> fields)
+        {            
+            return (fields.FirstOrDefault(f => f.Name == fieldName));
         }
 
         public static string GetValue(object field)

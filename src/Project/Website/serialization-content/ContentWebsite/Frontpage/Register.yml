@@ -1,0 +1,40 @@
+﻿---
+ID: "82f1b4f3-1d64-4b49-adcd-d5a34111bab7"
+Parent: "ec326172-c897-43bb-ac43-57242e31f36f"
+Template: "8e00a955-8ad1-4fb1-8683-57275f142347"
+Path: /sitecore/content/Frontpage/Register
+DB: master
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{A5BC37E7-ED96-4C1E-8590-A26E64DB55EA}"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{70D58D7E-E39A-45B3-A285-F1B5DC7460BD}">
+        <r
+          ds="{9C4D9A0D-0243-4C77-8DBA-5EF0439C1424}"
+          id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
+          par=""
+          ph="main"
+          uid="{118D16E3-7981-4B11-BB5D-3C143620F5A3}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T064354Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{FCA998C5-0CC3-4F91-94D8-0A4E6CAECE88}"
+    - ID: "75577384-3c97-45da-a847-81b00500e250"
+      Hint: Title
+      Value: Register

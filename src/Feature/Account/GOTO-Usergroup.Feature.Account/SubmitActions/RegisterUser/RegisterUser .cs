@@ -36,6 +36,9 @@ namespace GOTO_Usergroup.Feature.Account.SubmitActions.RegisterUser
                 return AbortForm(formSubmitContext);
             }
 
+            // Fall back: If profile id is not provided - we set default:
+            data.ProfileId = "{AE4C4969-5B7E-4B4E-9042-B2D8701CE214}";
+
             var result = Register(values.Email, values.Password, values.FullName, data.ProfileId);
 
             if (!result)
@@ -80,9 +83,12 @@ namespace GOTO_Usergroup.Feature.Account.SubmitActions.RegisterUser
 
             return new RegisterUserFormFields
             {
-                Email = FieldHelper.GetFieldById(data.EmailFieldId, formSubmitContext.Fields),
-                Password = FieldHelper.GetFieldById(data.PasswordFieldId, formSubmitContext.Fields),
-                FullName = FieldHelper.GetFieldById(data.FullNameFieldId, formSubmitContext.Fields),
+                Email = FieldHelper.GetFieldValueByName("Email", formSubmitContext.Fields),
+                Password = FieldHelper.GetFieldValueByName("Password Confirmation", formSubmitContext.Fields),
+                FullName = FieldHelper.GetFieldValueByName("Full Name", formSubmitContext.Fields),
+                //Email = FieldHelper.GetFieldById(data.EmailFieldId, formSubmitContext.Fields),
+                //Password = FieldHelper.GetFieldById(data.PasswordFieldId, formSubmitContext.Fields),
+                //FullName = FieldHelper.GetFieldById(data.FullNameFieldId, formSubmitContext.Fields),
             };
         }
 
