@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <ItemGroup>
+      <ProjectReference Include="$(SolutionDir)\src\Foundation\*\*\*.csproj" />
+      <ProjectReference Include="$(SolutionDir)\src\Feature\*\*\*.csproj" />
+     <!-- <ProjectReference Include="$(SolutionDir)\src\Project\*\*\*.csproj" />-->
+  </ItemGroup>
+</Project>
