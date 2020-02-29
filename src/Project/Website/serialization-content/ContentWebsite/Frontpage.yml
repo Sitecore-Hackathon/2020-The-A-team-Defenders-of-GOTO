@@ -4,6 +4,23 @@ Parent: "0de95ae4-41ab-4d01-9eb0-67441b7c2450"
 Template: "fb53feb4-371b-4577-ad86-c7e89e5d2471"
 Path: /sitecore/content/Frontpage
 DB: master
+SharedFields:
+- ID: "8d8d60c8-7dad-4a91-b63b-ef54cc5c22fe"
+  Hint: Site title
+  Value: "GOTO-Usergroup"
+- ID: "b96078ab-eb51-45b8-8062-14203a97e379"
+  Hint: Site logo
+  Value: |
+    <image mediaid="{847DE4C9-F236-4286-B876-1115414E2E90}" />
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{D390C691-8911-4EC1-AD8F-41EAC0A8D1E5}" />
+    </r>
 Languages:
 - Language: en
   Versions:

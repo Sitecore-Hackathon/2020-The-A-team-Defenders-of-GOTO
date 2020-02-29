@@ -5,111 +5,92 @@
     Layout = "MVCLayoutOuter.cshtml";
 }
 
-    <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="container">
 
-                <a class="navbar-brand" href="#">
-                    <img src="/docs/4.4/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-                    GOTO Usergroup
-                </a>
-                <div class="collapse navbar-collapse">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">world</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Register</a>
-                        </li>
-                    </ul>
-                    </div>
-            </nav>
+    @{
 
-        <div class="content">
-            @Html.Sitecore().Placeholder("content")
-            @*<div class="component map">
-                    <h2>Usergroups near you</h2>
-                    <img src="maps.png" width="100%" />
-                </div>
-                <div class="component upcoming">
-                    <h2>Upcoming usergroups</h2>
-                    <div class="upcoming-usergroup">
-                        <div class="upcoming-title">05.05.20 Chicago</div>
-                        <ul class="upcoming-subjects">
-                            <li>Roland Villemoes: The art of making videos</li>
-                            <li>Jason Statham: Asskicking for dummies</li>
-                            <li>Mike Tyson: That's methed up</li>
-                        </ul>
-                    </div>
-                    <div class="upcoming-usergroup">
-                        <div class="upcoming-title">06.06.20 Copenhagen</div>
-                        <ul class="upcoming-subjects">
-                            <li>Roland Villemoes: The art of making videos</li>
-                            <li>Jason Statham: Asskicking for dummies</li>
-                            <li>Mike Tyson: That's methed up</li>
-                        </ul>
-                    </div>
-                    <div class="upcoming-usergroup">
-                        <div class="upcoming-title">07.07.20 Tokyo</div>
-                        <ul class="upcoming-subjects">
-                            <li>Roland Villemoes: The art of making videos</li>
-                            <li>Jason Statham: Asskicking for dummies</li>
-                            <li>Mike Tyson: That's methed up</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="component popular">
-                    <h2>Popular subjects</h2>
-                    <ul class="subjects">
-                        <li>Sitecore Search</li>
-                        <li>Graph QL</li>
-                        <li>Tools for Sitecore</li>
-                        <li>Compilation horror stories</li>
+        Html.RenderPartial("/Views/Project/Website/Navigation.cshtml");
+    }
+    <div class="content">
+        @Html.Sitecore().Placeholder("content")
+        @*<div class="component map">
+                <h2>Usergroups near you</h2>
+                <img src="maps.png" width="100%" />
+            </div>
+            <div class="component upcoming">
+                <h2>Upcoming usergroups</h2>
+                <div class="upcoming-usergroup">
+                    <div class="upcoming-title">05.05.20 Chicago</div>
+                    <ul class="upcoming-subjects">
+                        <li>Roland Villemoes: The art of making videos</li>
+                        <li>Jason Statham: Asskicking for dummies</li>
+                        <li>Mike Tyson: That's methed up</li>
                     </ul>
-                </div>*@
-            
+                </div>
+                <div class="upcoming-usergroup">
+                    <div class="upcoming-title">06.06.20 Copenhagen</div>
+                    <ul class="upcoming-subjects">
+                        <li>Roland Villemoes: The art of making videos</li>
+                        <li>Jason Statham: Asskicking for dummies</li>
+                        <li>Mike Tyson: That's methed up</li>
+                    </ul>
+                </div>
+                <div class="upcoming-usergroup">
+                    <div class="upcoming-title">07.07.20 Tokyo</div>
+                    <ul class="upcoming-subjects">
+                        <li>Roland Villemoes: The art of making videos</li>
+                        <li>Jason Statham: Asskicking for dummies</li>
+                        <li>Mike Tyson: That's methed up</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="component popular">
+                <h2>Popular subjects</h2>
+                <ul class="subjects">
+                    <li>Sitecore Search</li>
+                    <li>Graph QL</li>
+                    <li>Tools for Sitecore</li>
+                    <li>Compilation horror stories</li>
+                </ul>
+            </div>*@
+
+    </div>
+
+    <div class="clear"></div>
+    <div class="footer">
+        <div class=footer-columns">
+            <div class="footer-column">
+                <ul>
+                    <li>stuff near you</li>
+                    <li>other stuff!</li>
+                    <li>yay</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <li>stuff near you</li>
+                    <li>other stuff!</li>
+                    <li>yay</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <li>stuff near you</li>
+                    <li>other stuff!</li>
+                    <li>yay</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <li>stuff near you</li>
+                    <li>other stuff!</li>
+                    <li>yay</li>
+                </ul>
+            </div>
+            <div class="clear"></div>
         </div>
-
-        <div class="clear"></div>
-        <div class="footer">
-            <div class=footer-columns">
-                <div class="footer-column">
-                    <ul>
-                        <li>stuff near you</li>
-                        <li>other stuff!</li>
-                        <li>yay</li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <ul>
-                        <li>stuff near you</li>
-                        <li>other stuff!</li>
-                        <li>yay</li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <ul>
-                        <li>stuff near you</li>
-                        <li>other stuff!</li>
-                        <li>yay</li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <ul>
-                        <li>stuff near you</li>
-                        <li>other stuff!</li>
-                        <li>yay</li>
-                    </ul>
-                </div>
-                <div class="clear"></div>
-            </div>
-            <div class="copyright">
-                2020 Sitecore Hackathon - The A-Team: Defenders of GOTO
-            </div>
+        <div class="copyright">
+            2020 Sitecore Hackathon - The A-Team: Defenders of GOTO
         </div>
     </div>
+</div>
