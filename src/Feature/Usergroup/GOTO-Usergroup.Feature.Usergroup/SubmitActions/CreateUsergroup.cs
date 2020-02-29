@@ -52,6 +52,12 @@ namespace GOTO_Usergroup.Feature.Usergroup.SubmitActions
             
         }
 
+        protected override bool TryParse(string value, out string target)
+        {
+            target = string.Empty;
+            return true;
+        }
+
         protected virtual Guid CreateList(string name)
         {
             var contactListRepository = ServiceLocator.ServiceProvider.GetService<IFetchRepository<ContactListModel>>();

@@ -1,6 +1,6 @@
 ﻿@using Sitecore.Mvc
 @using Sitecore.Mvc.Analytics.Extensions
-
+@using Sitecore.ExperienceForms.Mvc.Html
 @{
     Layout = null;
 }
@@ -9,6 +9,9 @@
 
 <html>
 <head>
+    @Html.Sitecore().VisitorIdentification()
+    @Html.RenderFormStyles()
+    @Html.RenderFormScripts()
     <title>GOTO Usergroup</title>
     <style type="text/css">
         body {
@@ -103,45 +106,45 @@
         <div class="content">
             @Html.Sitecore().Placeholder("content")
             @*<div class="component map">
-            <h2>Usergroups near you</h2>
-            <img src="maps.png" width="100%" />
-        </div>
-        <div class="component upcoming">
-            <h2>Upcoming usergroups</h2>
-            <div class="upcoming-usergroup">
-                <div class="upcoming-title">05.05.20 Chicago</div>
-                <ul class="upcoming-subjects">
-                    <li>Roland Villemoes: The art of making videos</li>
-                    <li>Jason Statham: Asskicking for dummies</li>
-                    <li>Mike Tyson: That's methed up</li>
-                </ul>
-            </div>
-            <div class="upcoming-usergroup">
-                <div class="upcoming-title">06.06.20 Copenhagen</div>
-                <ul class="upcoming-subjects">
-                    <li>Roland Villemoes: The art of making videos</li>
-                    <li>Jason Statham: Asskicking for dummies</li>
-                    <li>Mike Tyson: That's methed up</li>
-                </ul>
-            </div>
-            <div class="upcoming-usergroup">
-                <div class="upcoming-title">07.07.20 Tokyo</div>
-                <ul class="upcoming-subjects">
-                    <li>Roland Villemoes: The art of making videos</li>
-                    <li>Jason Statham: Asskicking for dummies</li>
-                    <li>Mike Tyson: That's methed up</li>
-                </ul>
-            </div>
-        </div>
-        <div class="component popular">
-            <h2>Popular subjects</h2>
-            <ul class="subjects">
-                <li>Sitecore Search</li>
-                <li>Graph QL</li>
-                <li>Tools for Sitecore</li>
-                <li>Compilation horror stories</li>
-            </ul>
-        </div>*@
+                    <h2>Usergroups near you</h2>
+                    <img src="maps.png" width="100%" />
+                </div>
+                <div class="component upcoming">
+                    <h2>Upcoming usergroups</h2>
+                    <div class="upcoming-usergroup">
+                        <div class="upcoming-title">05.05.20 Chicago</div>
+                        <ul class="upcoming-subjects">
+                            <li>Roland Villemoes: The art of making videos</li>
+                            <li>Jason Statham: Asskicking for dummies</li>
+                            <li>Mike Tyson: That's methed up</li>
+                        </ul>
+                    </div>
+                    <div class="upcoming-usergroup">
+                        <div class="upcoming-title">06.06.20 Copenhagen</div>
+                        <ul class="upcoming-subjects">
+                            <li>Roland Villemoes: The art of making videos</li>
+                            <li>Jason Statham: Asskicking for dummies</li>
+                            <li>Mike Tyson: That's methed up</li>
+                        </ul>
+                    </div>
+                    <div class="upcoming-usergroup">
+                        <div class="upcoming-title">07.07.20 Tokyo</div>
+                        <ul class="upcoming-subjects">
+                            <li>Roland Villemoes: The art of making videos</li>
+                            <li>Jason Statham: Asskicking for dummies</li>
+                            <li>Mike Tyson: That's methed up</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="component popular">
+                    <h2>Popular subjects</h2>
+                    <ul class="subjects">
+                        <li>Sitecore Search</li>
+                        <li>Graph QL</li>
+                        <li>Tools for Sitecore</li>
+                        <li>Compilation horror stories</li>
+                    </ul>
+                </div>*@
             <
         </div>
 
