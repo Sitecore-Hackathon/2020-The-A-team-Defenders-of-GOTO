@@ -13,6 +13,7 @@ using Sitecore.SecurityModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 
 namespace GOTO_Usergroup.Feature.Usergroup.SubmitActions
 {
@@ -27,6 +28,7 @@ namespace GOTO_Usergroup.Feature.Usergroup.SubmitActions
             var itemId = ((StringInputViewModel)formSubmitContext.Fields.FirstOrDefault(f => f.Name == "ItemId")).Value;
             formSubmitContext.RedirectUrl = Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(itemId));
             formSubmitContext.RedirectOnSuccess = true;
+            Thread.Sleep(2000);
             return true;
         }
 
