@@ -8,7 +8,8 @@ namespace GOTO_Usergroup.Foundation.XConnect.Interface
 {
     public interface IXConnectService
     {
-        Task<bool> SubscribeContact(string contactSource, string contactIdentifier, IEnumerable<Guid> listIds);
+        Task<bool> SubscribeContact(string email, IEnumerable<Guid> listIds);
+        Task<bool> SaveContactDetails(string email, string fullname);
         Guid CreateList(string name);
     }
 }

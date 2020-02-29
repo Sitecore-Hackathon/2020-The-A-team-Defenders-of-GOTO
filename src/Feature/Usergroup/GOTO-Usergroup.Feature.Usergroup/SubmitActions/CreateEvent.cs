@@ -1,4 +1,5 @@
-﻿using GOTO_Usergroup.Foundation.XConnect.Interface;
+﻿using GOTO_Usergroup.Foundation.XConnect;
+using GOTO_Usergroup.Foundation.XConnect.Interface;
 using Microsoft.Extensions.DependencyInjection;
 using Sitecore.Configuration;
 using Sitecore.Data;
@@ -52,7 +53,8 @@ namespace GOTO_Usergroup.Feature.Usergroup.SubmitActions
                 item["Attendees"] = new ID(attendeesListId).ToString();
                 item.Editing.AcceptChanges();
 
-                _xconnectService.SubscribeContact("test", "test", new List<Guid> { attendeesListId });
+                var email = Sitecore.Analytics.Tracker.Current.Contact.Identifiers.FirstOrDefault(i => i.Source == Constants.XConnectSourceName)?.Identifier;
+                _xconnectService.SubscribeContact(email, new List<Guid> { attendeesListId });
             }
             return true;
         }

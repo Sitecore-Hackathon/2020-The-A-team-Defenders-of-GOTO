@@ -1,4 +1,6 @@
 ﻿using GOTO_Usergroup.Feature.Account.Helper;
+using GOTO_Usergroup.Foundation.XConnect.Interface;
+using Sitecore.DependencyInjection;
 using Sitecore.Diagnostics;
 using Sitecore.ExperienceForms.Models;
 using Sitecore.ExperienceForms.Processing;
@@ -6,14 +8,17 @@ using Sitecore.ExperienceForms.Processing.Actions;
 using Sitecore.Security.Accounts;
 using Sitecore.Web;
 using System;
-
+using Microsoft.Extensions.DependencyInjection;
 
 namespace GOTO_Usergroup.Feature.Account.SubmitActions.RegisterUser
 {
     public class RegisterUser : SubmitActionBase<RegisterUserData>
     {
+        private IXConnectService _xconnectService;
+
         public RegisterUser(ISubmitActionData submitActionData) : base(submitActionData)
         {
+            _xconnectService = ServiceLocator.ServiceProvider.GetService<IXConnectService>();
         }
 
         protected override bool Execute(RegisterUserData data, FormSubmitContext formSubmitContext)
@@ -66,6 +71,8 @@ namespace GOTO_Usergroup.Feature.Account.SubmitActions.RegisterUser
 
                 user.Profile.FullName = name;
                 user.Profile.Save();
+
+                _xconnectService.SaveContactDetails(email, name);
             }
             catch (Exception ex)
             {

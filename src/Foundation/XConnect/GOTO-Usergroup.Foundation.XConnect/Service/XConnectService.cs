@@ -26,13 +26,13 @@ namespace GOTO_Usergroup.Foundation.XConnect.Service
             _apiUser = Settings.GetSetting("GOTO-Usergroup.Feature.Usergroup.ApiUser", "sitecore\\SystemListManager");
         }
 
-        public virtual async Task<bool> SubscribeContact(string contactSource, string contactIdentifier, IEnumerable<Guid> listIds)
+        public virtual async Task<bool> SubscribeContact(string email, IEnumerable<Guid> listIds)
         {
             try
             {
                 using (var client = SitecoreXConnectClientConfiguration.GetClient())
                 {
-                    var contact = await client.GetAsync(new IdentifiedContactReference(contactSource, contactIdentifier), new ExpandOptions(ListSubscriptions.DefaultFacetKey)).ConfigureAwait(false);
+                    var contact = await client.GetAsync(new IdentifiedContactReference(Constants.XConnectSourceName, email), new ExpandOptions(ListSubscriptions.DefaultFacetKey)).ConfigureAwait(false);
 
                     var listSubscriptions = contact.ListSubscriptions() ?? new ListSubscriptions();
                     foreach (var listId in listIds)
@@ -45,6 +45,45 @@ namespace GOTO_Usergroup.Foundation.XConnect.Service
                         listSubscriptions.Subscriptions.Add(subscription);
                     }
                     client.SetListSubscriptions(contact, listSubscriptions);
+                    await client.SubmitAsync();
+                    return true;
+                }
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        public virtual async Task<bool> SaveContactDetails(string email, string fullname)
+        {
+            try
+            {
+                using (var client = SitecoreXConnectClientConfiguration.GetClient())
+                {
+                    var contact = await client.GetAsync(new IdentifiedContactReference(Constants.XConnectSourceName, email), new ExpandOptions(EmailAddressList.DefaultFacetKey, PersonalInformation.DefaultFacetKey)).ConfigureAwait(false);
+
+                    fullname = fullname.Trim();
+                    var index = fullname.LastIndexOf(' ');
+                    var firstname = index > 0 ? fullname.Substring(0, index - 1) : string.Empty;
+                    var lastname = index > 0 ? fullname.Substring(index) : fullname;
+
+                    var personalInfo = contact.Personal() ?? new PersonalInformation();
+                    personalInfo.FirstName = firstname;
+                    personalInfo.LastName = lastname;
+                    client.SetPersonal(contact, personalInfo);
+
+                    var emailList = contact.Emails();
+                    if (emailList == null)
+                    {
+                        emailList = new EmailAddressList(new EmailAddress("email", true), "Preferred");
+                    }
+                    else
+                    {
+                        emailList.PreferredEmail.SmtpAddress = email;
+                    }
+                    client.SetEmails(contact, emailList);
+
                     await client.SubmitAsync();
                     return true;
                 }
