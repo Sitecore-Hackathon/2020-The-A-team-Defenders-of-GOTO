@@ -36,13 +36,58 @@ SharedFields:
           id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
           par=""
           ph="body"
-          uid="{FFF92114-3520-4AEA-ACAD-450B987195FF}" />
-        <r
-          ds="{60026F75-7B64-4CD6-B06B-802EE4B4C362}"
-          id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
-          par=""
-          ph="body"
-          uid="{498C3552-21D8-41B0-90F5-C6D12869A0BD}" />
+          uid="{FFF92114-3520-4AEA-ACAD-450B987195FF}">
+          <rls>
+            <ruleset
+              pet="true">
+              <rule
+                name="Where the user is anonymous"
+                uid="{0F62357B-8833-4828-90B8-3BC0C7A634C6}">
+                <conditions>
+                  <condition
+                    id="{EA0642FA-500B-4B2F-B264-765E771C516F}"
+                    uid="CA61BA72E29B4D908A167224614BA563" />
+                </conditions>
+                <actions>
+                  <action
+                    id="{25F351A1-712D-45F8-857D-8AD95BB2ACE9}"
+                    uid="F2A3D5865C7148609B1295BF8087C984" />
+                </actions>
+              </rule>
+              <rule
+                name="Where the user is already on list"
+                uid="{0A668FB3-96EB-4A63-A154-38DA9B44124A}">
+                <conditions>
+                  <condition
+                    id="{61149788-6E2A-4F8F-BB29-5E8D595B6957}"
+                    uid="BCDA89D4D4A2438F99A508BEC586C5CE"
+                    FieldName="Members" />
+                </conditions>
+                <actions>
+                  <action
+                    id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                    uid="6AF6F21D90BD47F885DFBB35F912A3B1"
+                    DataSource="{60026F75-7B64-4CD6-B06B-802EE4B4C362}" />
+                </actions>
+              </rule>
+              <rule
+                uid="{00000000-0000-0000-0000-000000000000}"
+                name="Default">
+                <conditions>
+                  <condition
+                    id="{4888ABBB-F17D-4485-B14B-842413F88732}"
+                    uid="DB9B68DE4106494F8DB86DA74C25C7D2" />
+                </conditions>
+                <actions>
+                  <action
+                    id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                    uid="A7E78309F34846E583C7A79AFDA6030C"
+                    DataSource="{60026F75-7B64-4CD6-B06B-802EE4B4C362}" />
+                </actions>
+              </rule>
+            </ruleset>
+          </rls>
+        </r>
       </d>
     </r>
 Languages:
