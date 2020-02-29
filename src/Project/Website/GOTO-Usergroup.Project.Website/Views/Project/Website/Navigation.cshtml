@@ -1,0 +1,23 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Analytics.Extensions
+@using Sitecore.ExperienceForms.Mvc.Html
+@{ 
+    var startItem = Sitecore.Context.Database.GetItem(Sitecore.Context.Site.StartPath);
+
+}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="@Sitecore.Links.LinkManager.GetItemUrl(startItem)">
+        @Html.Sitecore().Field("Site logo", startItem, new { @class = "d-inline-block align-top", @mw="30" })
+        @Html.Sitecore().Field("Site title", startItem)
+    </a>
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+            @foreach (Sitecore.Data.Items.Item child in startItem.GetChildren())
+            {
+                <li class="nav-item">
+                    <a class="nav-link" href="@Sitecore.Links.LinkManager.GetItemUrl(child)">@child.Name</a>
+                </li>
+            }
+        </ul>
+    </div>
+</nav>

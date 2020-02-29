@@ -1,0 +1,40 @@
+﻿---
+ID: "847de4c9-f236-4286-b876-1115414e2e90"
+Parent: "49965e30-b5be-4972-b062-47edd7bf906e"
+Template: "f1828a2c-7e5d-4bbd-98ca-320474871548"
+Path: /sitecore/media library/GOTO/logo
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/847DE4C9F2364286B8761115414E2E90.ashx?h=16&thn=1&w=16"
+- ID: "22eac599-f13b-4607-a89d-c091763a467d"
+  Hint: Width
+  Value: 30
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "598cb5a5-d0de-49e6-81e2-835440e04b09"
+  Value: iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAABh0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMS42/U4J6AAAAQ5JREFUSEvlk0sOwjAMRDkIS+5/M84QcFRHE8ee2i2FBU+aVvVnJln01lr7idxiVc/7ozHZedFSyMoYh0Th0wcTBoFZCpgffpO5FYZsi4cxPn7wJ4Ii1HsJfSMPV4zK/BQ8ThIssLrX07rXW4K9IQWNInlEvRG6d9uoJ2if7VtGcP8oLHqUgjVU+I/g7d2RAXfoRHC0u1Q13BMD+5k97gZQE+ixOSQdrKixlQfruxu4gDqD9VncohBcZNpDZ6ZJtpgxLgVn/+OKKaMcnCEb3CXBGG7RwQyVOZmcbm3JmgnlYFF08yuCJWcEq/QA0UEYe8HqOd3YEx5AdQSz372XMCY0qMj6iJbCt+QWr1e7vQB4WC1S/vrzAAAAAABJRU5ErkJggg==
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 400
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: image/png
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: png
+- ID: "cb09946f-3218-4823-87d2-d5007c199a96"
+  Hint: Dimensions
+  Value: 30 x 30
+- ID: "de2ca9e4-c117-4c8a-a139-1ff4b199d15a"
+  Hint: Height
+  Value: 30
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T152756Z
