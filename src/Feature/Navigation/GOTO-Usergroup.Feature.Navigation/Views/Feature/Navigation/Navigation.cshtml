@@ -11,7 +11,7 @@
         @Html.Sitecore().Field("Site title", startItem)
     </a>
     <div class="collapse navbar-collapse">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav mr-auto">
             @foreach (Sitecore.Data.Items.Item child in startItem.GetChildren())
             {
                 <li class="nav-item">

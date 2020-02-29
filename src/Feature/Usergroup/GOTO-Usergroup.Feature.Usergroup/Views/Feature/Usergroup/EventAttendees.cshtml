@@ -8,11 +8,11 @@
 }
 
 <div>
-    <h2>Attendees (@attendees.Count())</h2>
-    <ul>
+    <ul class="list-group" style="max-width:400px">
+        <li class="list-group-item active font-weight-bold">Attendees (@attendees.Count())</li>
         @foreach (var attendee in attendees)
         {
-        <li><a href="mailto:@attendee.Email">@attendee.FirstName @attendee.LastName</a></li>
+        <li class="list-group-item"><a href="mailto:@attendee.Email">@attendee.FirstName @attendee.LastName</a></li>
         }
     </ul>
 </div>

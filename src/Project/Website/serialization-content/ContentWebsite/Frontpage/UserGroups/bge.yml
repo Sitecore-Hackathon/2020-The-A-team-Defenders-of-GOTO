@@ -1,0 +1,31 @@
+﻿---
+ID: "b7f4e518-66df-42c0-bf32-a983e6a72a57"
+Parent: "8edae83b-bb11-49ff-831d-7ea394c9738c"
+Template: "b6ef3982-5312-46ca-8934-e3dad6f0d53a"
+Path: /sitecore/content/Frontpage/UserGroups/bge
+DB: master
+SharedFields:
+- ID: "00fbc4fd-2025-489a-9c02-c7fa15a7d504"
+  Hint: Organizers
+  Value: "{786867E2-8AE9-4CAC-9F57-C5079110156C}"
+- ID: "57aaa678-179d-4125-ad82-f13eecf3c43c"
+  Hint: Description
+  Value: "VI HAR DET SJOVT!"
+- ID: "8b6e08ff-4787-4494-a016-2beeed3b08eb"
+  Hint: Title
+  Value: BEST GROUP EVER
+- ID: "a62a2f9d-dd67-4b5b-8234-b2ddd18d25d1"
+  Hint: Members
+  Value: "{093AAE4C-292E-4F40-99FE-331F1E5F78E4}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T214901Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\me@alpha-solutions.us

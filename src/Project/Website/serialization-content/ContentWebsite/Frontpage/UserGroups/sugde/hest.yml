@@ -1,0 +1,37 @@
+﻿---
+ID: "019c0a55-5961-4a23-a4a0-f1bcb7966509"
+Parent: "31fe1d37-2513-4ddd-81bf-d559ceb9350e"
+Template: "eb03188c-c8da-49c5-8a41-9b3ae8dc2a75"
+Path: /sitecore/content/Frontpage/UserGroups/sugde/hest
+DB: master
+SharedFields:
+- ID: "1aa1a4d5-cfb7-410d-9210-27b42e71d122"
+  Hint: Description
+  Value: asd
+- ID: "637a19b0-3643-4959-bb85-3cbb1d7b4d6f"
+  Hint: Address
+  Value: aaa
+- ID: "69efe9d9-f144-45b6-ab6b-2a915b3a512f"
+  Hint: Date
+  Value: 20200205T000000
+- ID: "6fa30b80-7bad-44cb-a832-bda70b92f760"
+  Hint: Title
+  Value: hest
+- ID: "ce3c7c09-1188-4143-9d35-dd99a8365703"
+  Hint: Host
+  Value: RM
+- ID: "ded84d8e-0c00-4a27-bbd2-aed232adc8b8"
+  Hint: Attendees
+  Value: "{33D86FEC-D3C3-418E-BFC4-FEAA1495DBA5}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T215236Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\rm@alpha-solutions.com
