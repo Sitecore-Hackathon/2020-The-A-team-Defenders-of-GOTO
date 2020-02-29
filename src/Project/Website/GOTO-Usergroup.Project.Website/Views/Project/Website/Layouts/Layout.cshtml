@@ -1,0 +1,188 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Analytics.Extensions
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>GOTO Usergroup</title>
+    <style type="text/css">
+        body {
+            font-family: arial;
+        }
+
+        .container {
+            width: 1200px;
+            margin: auto;
+        }
+
+        .header {
+            border-bottom: 2px solid black;
+        }
+
+        .title {
+            font-size: 60px;
+            text-align: center;
+            padding: 30px;
+            color: white;
+            font-weight: bold;
+            background-color: red;
+        }
+
+        .menu {
+        }
+
+        .menu-item {
+            float: left;
+            padding: 30px;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .footer {
+            border-top: 2px solid black;
+        }
+
+        .footer-column {
+            width: 200px;
+            padding: 30px;
+            float: left;
+        }
+
+        .component {
+            width: 1140px;
+            padding: 30px;
+        }
+
+        .upcoming, .popular {
+            width: 540px;
+            float: left;
+        }
+
+        .upcoming-usergroup {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title">GOTO Usergroup</div>
+            <div class="menu">
+                <div class="menu-item">
+                    hello
+                </div>
+                <div class="menu-item">
+                    world
+                </div>
+                <div class="menu-item">
+                    let's
+                </div>
+                <div class="menu-item">
+                    GOTO!
+                </div>
+                <div class="menu-item right">
+                    Register
+                </div>
+                <div class="clear"></div>
+            </div>
+
+        </div>
+        <div class="content">
+            @Html.Sitecore().Placeholder("content")
+            @*<div class="component map">
+            <h2>Usergroups near you</h2>
+            <img src="maps.png" width="100%" />
+        </div>
+        <div class="component upcoming">
+            <h2>Upcoming usergroups</h2>
+            <div class="upcoming-usergroup">
+                <div class="upcoming-title">05.05.20 Chicago</div>
+                <ul class="upcoming-subjects">
+                    <li>Roland Villemoes: The art of making videos</li>
+                    <li>Jason Statham: Asskicking for dummies</li>
+                    <li>Mike Tyson: That's methed up</li>
+                </ul>
+            </div>
+            <div class="upcoming-usergroup">
+                <div class="upcoming-title">06.06.20 Copenhagen</div>
+                <ul class="upcoming-subjects">
+                    <li>Roland Villemoes: The art of making videos</li>
+                    <li>Jason Statham: Asskicking for dummies</li>
+                    <li>Mike Tyson: That's methed up</li>
+                </ul>
+            </div>
+            <div class="upcoming-usergroup">
+                <div class="upcoming-title">07.07.20 Tokyo</div>
+                <ul class="upcoming-subjects">
+                    <li>Roland Villemoes: The art of making videos</li>
+                    <li>Jason Statham: Asskicking for dummies</li>
+                    <li>Mike Tyson: That's methed up</li>
+                </ul>
+            </div>
+        </div>
+        <div class="component popular">
+            <h2>Popular subjects</h2>
+            <ul class="subjects">
+                <li>Sitecore Search</li>
+                <li>Graph QL</li>
+                <li>Tools for Sitecore</li>
+                <li>Compilation horror stories</li>
+            </ul>
+        </div>*@
+            <
+        </div>
+
+        <div class="clear"></div>
+        <div class="footer">
+            <div class=footer-columns">
+                <div class="footer-column">
+                    <ul>
+                        <li>stuff near you</li>
+                        <li>other stuff!</li>
+                        <li>yay</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul>
+                        <li>stuff near you</li>
+                        <li>other stuff!</li>
+                        <li>yay</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul>
+                        <li>stuff near you</li>
+                        <li>other stuff!</li>
+                        <li>yay</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul>
+                        <li>stuff near you</li>
+                        <li>other stuff!</li>
+                        <li>yay</li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="copyright">
+                2020 Sitecore Hackathon - The A-Team: Defenders of GOTO
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -115,8 +115,12 @@
     <Content Include="App_Config\Include\GOTO-Usergroup\Project\Website\Serialization.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="App_Config\Include\GOTO-Usergroup\Project\Website\Sites.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
+    <Content Include="Views\Project\Website\Layouts\Layout.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
