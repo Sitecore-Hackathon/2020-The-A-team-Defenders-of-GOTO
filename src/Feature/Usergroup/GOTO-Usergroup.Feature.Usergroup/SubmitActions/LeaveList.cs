@@ -1,17 +1,12 @@
 ﻿using GOTO_Usergroup.Foundation.XConnect;
 using GOTO_Usergroup.Foundation.XConnect.Interface;
 using Microsoft.Extensions.DependencyInjection;
-using Sitecore.Configuration;
-using Sitecore.Data;
-using Sitecore.Data.Items;
 using Sitecore.DependencyInjection;
 using Sitecore.ExperienceForms.Models;
 using Sitecore.ExperienceForms.Mvc.Models.Fields;
 using Sitecore.ExperienceForms.Processing;
 using Sitecore.ExperienceForms.Processing.Actions;
-using Sitecore.SecurityModel;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 
 namespace GOTO_Usergroup.Feature.Usergroup.SubmitActions
