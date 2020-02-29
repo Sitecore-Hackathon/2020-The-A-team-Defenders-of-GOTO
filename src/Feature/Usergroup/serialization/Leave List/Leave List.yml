@@ -4,6 +4,10 @@ Parent: "891e7268-fa3e-4e74-b4b1-c16b206f2165"
 Template: "c2d1d114-3cfe-4558-a9e3-d1a1ec0fcab7"
 Path: /sitecore/system/Settings/Forms/Submit Actions/Leave List
 DB: master
+SharedFields:
+- ID: "2c6e7306-2871-473a-9149-71443182b8e8"
+  Hint: Model Type
+  Value: GOTO_Usergroup.Feature.Usergroup.SubmitActions.LeaveList
 Languages:
 - Language: en
   Versions:

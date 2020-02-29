@@ -36,7 +36,9 @@ namespace GOTO_Usergroup.Feature.Usergroup.SubmitActions
         {
             var shortname = ((StringInputViewModel)formSubmitContext.Fields.FirstOrDefault(f => f.Name == "ShortName")).Value;
             var title = ((StringInputViewModel)formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Title")).Value;
-            
+            var description = ((StringInputViewModel)formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Description")).Value;
+            var image = ((FileUploadViewModel)formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Image")).Value;
+
             using (new SecurityDisabler())
             {
                 var item = _rootItem.Add(shortname, _templateId);
@@ -44,6 +46,7 @@ namespace GOTO_Usergroup.Feature.Usergroup.SubmitActions
                 var organizersListId = _xconnectService.CreateList($"{shortname} Organizers");
                 item.Editing.BeginEdit();
                 item["Title"] = title;
+                item["Description"] = description;
                 item["Members"] = new ID(membersListId).ToString();
                 item["Organizers"] = new ID(organizersListId).ToString();
                 item.Editing.AcceptChanges();

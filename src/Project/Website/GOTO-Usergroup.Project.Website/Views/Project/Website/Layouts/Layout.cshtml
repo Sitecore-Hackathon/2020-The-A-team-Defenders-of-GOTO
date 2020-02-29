@@ -12,83 +12,22 @@
         Html.RenderPartial("/Views/Project/Website/Navigation.cshtml");
     }
     <div class="content">
-        @Html.Sitecore().Placeholder("content")
-        @*<div class="component map">
-                <h2>Usergroups near you</h2>
-                <img src="maps.png" width="100%" />
+        @Html.Sitecore().Placeholder("body")
+        
+        <p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseForms" role="button" aria-expanded="false" aria-controls="collapseForms">
+                Create new
+            </a>
+        </p>
+        <div class="collapse" id="collapseForms">
+            <div class="card card-body">
+                @Html.Sitecore().Placeholder("createforms")
             </div>
-            <div class="component upcoming">
-                <h2>Upcoming usergroups</h2>
-                <div class="upcoming-usergroup">
-                    <div class="upcoming-title">05.05.20 Chicago</div>
-                    <ul class="upcoming-subjects">
-                        <li>Roland Villemoes: The art of making videos</li>
-                        <li>Jason Statham: Asskicking for dummies</li>
-                        <li>Mike Tyson: That's methed up</li>
-                    </ul>
-                </div>
-                <div class="upcoming-usergroup">
-                    <div class="upcoming-title">06.06.20 Copenhagen</div>
-                    <ul class="upcoming-subjects">
-                        <li>Roland Villemoes: The art of making videos</li>
-                        <li>Jason Statham: Asskicking for dummies</li>
-                        <li>Mike Tyson: That's methed up</li>
-                    </ul>
-                </div>
-                <div class="upcoming-usergroup">
-                    <div class="upcoming-title">07.07.20 Tokyo</div>
-                    <ul class="upcoming-subjects">
-                        <li>Roland Villemoes: The art of making videos</li>
-                        <li>Jason Statham: Asskicking for dummies</li>
-                        <li>Mike Tyson: That's methed up</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="component popular">
-                <h2>Popular subjects</h2>
-                <ul class="subjects">
-                    <li>Sitecore Search</li>
-                    <li>Graph QL</li>
-                    <li>Tools for Sitecore</li>
-                    <li>Compilation horror stories</li>
-                </ul>
-            </div>*@
-
+        </div>
     </div>
 
     <div class="clear"></div>
     <div class="footer">
-        <div class=footer-columns">
-            <div class="footer-column">
-                <ul>
-                    <li>stuff near you</li>
-                    <li>other stuff!</li>
-                    <li>yay</li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <ul>
-                    <li>stuff near you</li>
-                    <li>other stuff!</li>
-                    <li>yay</li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <ul>
-                    <li>stuff near you</li>
-                    <li>other stuff!</li>
-                    <li>yay</li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <ul>
-                    <li>stuff near you</li>
-                    <li>other stuff!</li>
-                    <li>yay</li>
-                </ul>
-            </div>
-            <div class="clear"></div>
-        </div>
         <div class="copyright">
             2020 Sitecore Hackathon - The A-Team: Defenders of GOTO
         </div>

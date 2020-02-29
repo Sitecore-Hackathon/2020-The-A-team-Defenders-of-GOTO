@@ -1,26 +1,23 @@
 ﻿---
-ID: "05731c72-097d-45b9-bdcf-34f309d9f3cb"
+ID: "cc3b7b86-608f-4be5-9fd6-6274b26025f8"
 Parent: "8918f2e5-6e72-435c-9860-b11be7101ba4"
-Template: "0908030b-4564-42ea-a6fa-c7a5a2d921a8"
-Path: /sitecore/Forms/Create Event/Page/ItemId
+Template: "8cddb194-f456-4a75-89b7-346f8f39f95c"
+Path: /sitecore/Forms/Create Event/Page/Section(5)
 DB: master
 SharedFields:
-- ID: "589a7ade-81d4-4a60-b9e2-7eaf6ae8a563"
-  Hint: Field Type
-  Value: "{D814E23C-4445-4E16-9CAB-A0769001EBB0}"
 - ID: "71c6de8e-4718-4977-b83e-b49552ee14b0"
   Hint: Conditions
   Value: |
     {"fieldConditions":[]}
+- ID: "7abaa3f6-6ec0-4b65-a463-7919bfae55aa"
+  Hint: Css Class
+  Value: "form-group"
 - ID: "84ece662-5034-40cb-9c60-744db64bb294"
   Hint: Field Key
-  Value: EA897BC15E0D4EA591E0E6A8F10C5415
-- ID: "9f7da002-7b86-436b-8dda-7efe5837b88e"
-  Hint: Min Length
-  Value: 0
+  Value: DDA7BF46366A497FB61EDE102420629E
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 100
+  Value: 500
 Languages:
 - Language: en
   Versions:
@@ -28,4 +25,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20200229T170521Z
+      Value: 20200229T180551Z

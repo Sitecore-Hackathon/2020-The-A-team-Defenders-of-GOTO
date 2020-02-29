@@ -10,7 +10,7 @@ SharedFields:
   Value: office/32x32/information.png
 - ID: "12594037-53e5-44c0-ad63-deb52dead374"
   Hint: View Path
-  Value: FieldTemplates/Usergroup/MemberListId
+  Value: FieldTemplates/Usergroup/AttendeesListId
 - ID: "16882a65-d10b-4e9e-9d6a-b13480a34f2d"
   Hint: Model Type
   Value: Sitecore.ExperienceForms.Mvc.Models.Fields.StringInputViewModel,Sitecore.ExperienceForms.Mvc

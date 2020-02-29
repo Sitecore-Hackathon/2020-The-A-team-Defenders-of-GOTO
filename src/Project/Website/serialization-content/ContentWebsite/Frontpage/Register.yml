@@ -4,6 +4,20 @@ Parent: "ec326172-c897-43bb-ac43-57242e31f36f"
 Template: "8e00a955-8ad1-4fb1-8683-57275f142347"
 Path: /sitecore/content/Frontpage/Register
 DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{E7C8B76D-36FB-4D06-82C8-58F2C9DAAE5F}"
+          s:ph="body" />
+      </d>
+    </r>
 Languages:
 - Language: en
   Versions:

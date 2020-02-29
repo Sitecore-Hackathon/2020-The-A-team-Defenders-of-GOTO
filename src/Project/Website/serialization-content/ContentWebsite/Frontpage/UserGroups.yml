@@ -21,8 +21,12 @@ SharedFields:
           ds="{9AC5792F-05E2-4BF9-9385-C36ACAF22F14}"
           id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
           par=""
-          ph="content"
+          ph="createforms"
           uid="{0F74BBAF-6E6F-465A-85AE-ECF7B9B4D2DF}" />
+        <r
+          id="{B74137E5-B324-407C-AFC8-4567EB4C0022}"
+          ph="body"
+          uid="{0824025C-3FD3-4FCA-BF84-136904DBE8CC}" />
       </d>
     </r>
 Languages:

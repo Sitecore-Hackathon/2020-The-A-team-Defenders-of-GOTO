@@ -16,9 +16,9 @@ SharedFields:
         <r
           ds="{51C01E26-DB53-4CFE-BD8C-C3512267B215}"
           id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
-          pt="{6462E256-1995-41E6-8A8B-DE7749188D6C}"
+          pt="{628D438E-B242-428E-AE6D-1AACB78F9B0D}"
           par=""
-          ph="content"
+          ph="body"
           uid="{4B0F23FF-D7CF-462F-AC9E-EE3B707E381B}">
           <rls>
             <ruleset
@@ -69,21 +69,7 @@ Languages:
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
               uid="{4B0F23FF-D7CF-462F-AC9E-EE3B707E381B}"
-              s:pt="{6462E256-1995-41E6-8A8B-DE7749188D6C}"
-              s:uid="{4B0F23FF-D7CF-462F-AC9E-EE3B707E381B}">
-              <rls>
-                <ruleset>
-                  <rule
-                    uid="{2F34039C-41C6-4208-9536-8C82E0931A91}"
-                    s:test="true"
-                    s:uid="{2F34039C-41C6-4208-9536-8C82E0931A91}" />
-                  <rule
-                    uid="{00000000-0000-0000-0000-000000000000}"
-                    s:test="true"
-                    s:uid="{00000000-0000-0000-0000-000000000000}" />
-                </ruleset>
-              </rls>
-            </r>
+              s:pt="{628D438E-B242-428E-AE6D-1AACB78F9B0D}" />
           </d>
         </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"

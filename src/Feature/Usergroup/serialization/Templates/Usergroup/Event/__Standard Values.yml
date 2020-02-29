@@ -17,13 +17,13 @@ SharedFields:
           ds="{EA199C7C-AD7E-4377-A785-147692074CF0}"
           id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
           par=""
-          ph="content"
+          ph="body"
           uid="{6CD255CF-BEA1-47AC-B844-10BBFA37BF98}" />
         <r
           ds="{790E15B3-8C48-49D1-9813-8355C53DA06D}"
           id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
           par=""
-          ph="content"
+          ph="body"
           uid="{604A6FC6-F95E-401B-85D2-295D58632995}" />
       </d>
     </r>

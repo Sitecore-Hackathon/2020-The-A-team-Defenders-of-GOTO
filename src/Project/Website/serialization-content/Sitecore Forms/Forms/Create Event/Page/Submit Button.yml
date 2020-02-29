@@ -9,6 +9,9 @@ SharedFields:
   Hint: Conditions
   Value: |
     {"fieldConditions":[]}
+- ID: "7abaa3f6-6ec0-4b65-a463-7919bfae55aa"
+  Hint: Css Class
+  Value: "btn btn-primary"
 - ID: "84ece662-5034-40cb-9c60-744db64bb294"
   Hint: Field Key
   Value: 9FAA1816306B4C1DAF896E1661416CEC

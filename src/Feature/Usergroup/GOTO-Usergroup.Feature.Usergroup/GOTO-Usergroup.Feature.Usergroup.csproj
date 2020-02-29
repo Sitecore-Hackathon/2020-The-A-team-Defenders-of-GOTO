@@ -168,6 +168,9 @@
     <Content Include="Views\FormBuilder\FieldTemplates\Usergroup\ItemId.cshtml" />
     <Content Include="Views\FormBuilder\FieldTemplates\Usergroup\MemberListId.cshtml" />
     <Content Include="Views\FormBuilder\FieldTemplates\Usergroup\AttendeesListId.cshtml" />
+    <Content Include="Views\Feature\Usergroup\Usergroups.cshtml" />
+    <Content Include="Views\Feature\Usergroup\Usergroupintro.cshtml" />
+    <Content Include="Views\Feature\Usergroup\Events.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

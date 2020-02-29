@@ -1,13 +1,13 @@
 ﻿---
-ID: "709ad929-b997-488a-89ce-8199913c225c"
+ID: "a58d4e0e-c68a-4b56-a312-660b2dc4ef96"
 Parent: "211c6b50-f1eb-492f-842f-66f1b1e61b84"
 Template: "05fe45d4-b9c7-40de-b767-7c5abe7119f9"
-Path: /sitecore/Forms/Leave event/Page/Submit Button/SubmitActions/Join List
+Path: /sitecore/Forms/Leave event/Page/Submit Button/SubmitActions/Leave List
 DB: master
 SharedFields:
 - ID: "abc57b6d-5542-4ab9-a889-106225a032e6"
   Hint: Submit Action
-  Value: "{3F4F7976-6F35-4FEB-AD84-85D1DF7ECBC1}"
+  Value: "{0E58045F-31F1-4FE4-8B8B-40F899ECB946}"
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 0
@@ -18,7 +18,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20200229T184900Z
+      Value: 20200229T193100Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
