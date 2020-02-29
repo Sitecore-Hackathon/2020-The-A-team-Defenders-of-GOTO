@@ -5,6 +5,12 @@ Template: "fb53feb4-371b-4577-ad86-c7e89e5d2471"
 Path: /sitecore/content/Frontpage
 DB: master
 SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {5979C496-3CED-42A9-8139-74D0501453F7}
+    {8E00A955-8AD1-4FB1-8683-57275F142347}
 - ID: "8d8d60c8-7dad-4a91-b63b-ef54cc5c22fe"
   Hint: Site title
   Value: "GOTO-Usergroup"
