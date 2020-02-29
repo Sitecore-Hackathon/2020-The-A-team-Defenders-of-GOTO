@@ -4,6 +4,10 @@ Parent: "e6ba5edb-a803-4ec3-8e28-7d85c7e1183c"
 Template: "f0d16eee-3a05-4e43-a082-795a32b873c0"
 Path: /sitecore/system/Settings/Rules/Definitions/Elements/Xdb/Where Contact is member of contact list defined in field
 DB: master
+SharedFields:
+- ID: "ab51c8b2-f0e1-4471-9aae-cc080d774923"
+  Hint: Type
+  Value: "GOTO_Usergroup.Feature.Usergroup.RenderingConditions.ContactSubscribedToListFromField, GOTO-Usergroup.Feature.Usergroup"
 Languages:
 - Language: en
   Versions:
