@@ -174,6 +174,8 @@
     <Content Include="Views\Feature\Usergroup\Events.cshtml" />
     <Content Include="Views\Feature\Usergroup\EventAttendees.cshtml" />
     <Content Include="Views\Feature\Usergroup\Eventintro.cshtml" />
+    <Content Include="Views\Feature\Usergroup\UsergroupMembers.cshtml" />
+    <Content Include="Views\Feature\Usergroup\UsergroupOrganizers.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

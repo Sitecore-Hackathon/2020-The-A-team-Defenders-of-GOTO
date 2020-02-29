@@ -1,0 +1,18 @@
+﻿@using GOTO_Usergroup.Foundation.XConnect.Interface
+@using Microsoft.Extensions.DependencyInjection
+@using Sitecore.DependencyInjection
+@{
+    var service = ServiceLocator.ServiceProvider.GetService<IXConnectService>();
+    var listId = Guid.Parse(Sitecore.Context.Item["Organizers"]);
+    var organizers = service.GetSubscribersFromList(listId);
+}
+
+<div>
+    <h2>Members (@organizers.Count())</h2>
+    <ul>
+        @foreach (var organizer in organizers)
+        {
+        <li><a href="mailto:@organizer.Email">@organizer.FirstName @organizer.LastName</a></li>
+        }
+    </ul>
+</div>
