@@ -1,20 +1,20 @@
 ﻿---
-ID: "74ab3f2b-056d-447a-880f-e2b18373a001"
+ID: "c270c46f-29e5-4877-92be-12d7512e972c"
 Parent: "87c7b385-2dd7-413c-ac93-c89500a09f76"
-Template: "0908030b-4564-42ea-a6fa-c7a5a2d921a8"
-Path: /sitecore/Forms/Login Form/Page/LoginSection/Username
+Template: "8cddb194-f456-4a75-89b7-346f8f39f95c"
+Path: /sitecore/Forms/Login Form/Page/LoginSection/Section
 DB: master
 SharedFields:
 - ID: "71c6de8e-4718-4977-b83e-b49552ee14b0"
   Hint: Conditions
   Value: |
     {"fieldConditions":[]}
+- ID: "7abaa3f6-6ec0-4b65-a463-7919bfae55aa"
+  Hint: Css Class
+  Value: "form-group"
 - ID: "84ece662-5034-40cb-9c60-744db64bb294"
   Hint: Field Key
-  Value: 9E0B1465544E4E4F8AF419B05B0828B7
-- ID: "9f7da002-7b86-436b-8dda-7efe5837b88e"
-  Hint: Min Length
-  Value: 0
+  Value: A7172CB3E4C54F13A61F1DE7B1E6AFFD
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 0
@@ -25,7 +25,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20200229T144555Z
-    - ID: "71ffd7b2-8b09-4f7b-8a66-1e4cef653e8d"
-      Hint: Title
-      Value: Email
+      Value: 20200229T195155Z

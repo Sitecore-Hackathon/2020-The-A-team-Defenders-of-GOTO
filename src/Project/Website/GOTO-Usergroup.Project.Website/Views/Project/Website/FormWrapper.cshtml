@@ -1,0 +1,13 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Analytics.Extensions
+@using Sitecore.ExperienceForms.Mvc.Html
+<p>
+    <a class="btn btn-primary" data-toggle="collapse" href="#collapseForms" role="button" aria-expanded="false" aria-controls="collapseForms">
+        Create new
+    </a>
+</p>
+<div class="collapse" id="collapseForms">
+    <div class="card card-body">
+        @Html.Sitecore().Placeholder("createforms")
+    </div>
+</div>

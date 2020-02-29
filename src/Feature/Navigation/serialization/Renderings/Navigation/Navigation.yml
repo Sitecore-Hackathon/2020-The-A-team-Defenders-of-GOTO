@@ -1,0 +1,18 @@
+﻿---
+ID: "1ebf60b5-5df7-4a3e-9ced-46a3b5284940"
+Parent: "d2b39c2c-2c45-4aa6-83bf-cc1713c912d5"
+Template: "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6"
+Path: /sitecore/layout/Renderings/Feature/Navigation/Navigation
+DB: master
+SharedFields:
+- ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
+  Hint: Path
+  Value: /Views/Feature/Navigation/Navigation.cshtml
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T202811Z

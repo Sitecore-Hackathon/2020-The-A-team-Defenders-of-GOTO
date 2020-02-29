@@ -88,6 +88,26 @@ SharedFields:
             </ruleset>
           </rls>
         </r>
+        <r
+          ds="{A319F882-E9E8-408E-BAB2-9B7C1A4302C2}"
+          id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
+          par=""
+          ph="nav-auth"
+          uid="{9E5F3D56-3414-4AC1-9D03-CC87A6E86369}" />
+        <r
+          ds="{51C01E26-DB53-4CFE-BD8C-C3512267B215}"
+          id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
+          par=""
+          ph="nav-not-auth"
+          uid="{D39AAFD0-DA3F-44F1-9283-036D58D1CAEE}" />
+        <r
+          id="{1EBF60B5-5DF7-4A3E-9CED-46A3B5284940}"
+          ph="header"
+          uid="{474FBACE-2F08-4EAC-92B0-D27FE9F9BA20}" />
+        <r
+          id="{5C23CD03-4D9E-4E0A-A1B2-B3B3571F986D}"
+          ph="nav"
+          uid="{D79CFB28-0E3B-4FBE-9785-31FA1B3E7B06}" />
       </d>
     </r>
 Languages:
