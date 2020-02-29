@@ -1,0 +1,19 @@
+﻿---
+ID: "2dbe51cc-b134-4da3-9aa5-b625fd0868f6"
+Parent: "7726d247-d829-4386-a0d0-db6f96a2368c"
+Template: "69474581-3668-4fed-b0f0-0b88c2532cae"
+Path: /sitecore/content/Email/Messages/Service Messages
+DB: master
+BranchID: "f8fae92a-4f10-470c-ad5c-7ed9e6b636af"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{9A210EBB-A432-4A25-BF20-D9CEA73C5969}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T220355Z

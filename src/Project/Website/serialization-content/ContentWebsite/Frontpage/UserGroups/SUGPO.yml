@@ -1,0 +1,31 @@
+﻿---
+ID: "42467526-d982-4c2b-af5f-17a25c6db40d"
+Parent: "8edae83b-bb11-49ff-831d-7ea394c9738c"
+Template: "b6ef3982-5312-46ca-8934-e3dad6f0d53a"
+Path: /sitecore/content/Frontpage/UserGroups/SUGPO
+DB: master
+SharedFields:
+- ID: "00fbc4fd-2025-489a-9c02-c7fa15a7d504"
+  Hint: Organizers
+  Value: "{7577EB29-D9BE-4498-BD0B-6F5858B58CF9}"
+- ID: "57aaa678-179d-4125-ad82-f13eecf3c43c"
+  Hint: Description
+  Value: "Polens største usergroup, Rasmus er med!"
+- ID: "8b6e08ff-4787-4494-a016-2beeed3b08eb"
+  Hint: Title
+  Value: Sitecore usergroup Polen
+- ID: "a62a2f9d-dd67-4b5b-8234-b2ddd18d25d1"
+  Hint: Members
+  Value: "{AB9D7381-B133-4316-A75C-DADEC42C92F9}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T220026Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\rm@alpha-solutions.dk

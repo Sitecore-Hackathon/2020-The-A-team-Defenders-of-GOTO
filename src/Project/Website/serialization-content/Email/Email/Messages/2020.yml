@@ -1,0 +1,14 @@
+﻿---
+ID: "a52a066d-a507-4548-8f1d-c7fc54c2f461"
+Parent: "7726d247-d829-4386-a0d0-db6f96a2368c"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/content/Email/Messages/2020
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T220432Z

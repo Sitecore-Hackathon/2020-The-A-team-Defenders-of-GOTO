@@ -1,0 +1,27 @@
+﻿---
+ID: "10e0f24f-6f46-4900-96e6-e6f45aebdaae"
+Parent: "c273e3df-6256-4e97-ad82-6fefea2779e1"
+Template: "014de185-83e7-4316-baba-376bc5efc6c5"
+Path: /sitecore/content/Email/Messages/2020/02/29T22043303/Registration complete/Message Root/Header Image Block
+DB: master
+BranchID: "8c18055a-eb1e-4358-bc12-26b4e2568910"
+SharedFields:
+- ID: "6a576c00-9ad3-4e6e-9274-4173314ea1dc"
+  Hint: Image
+  Value: |
+    <image mediaid="{25E254B7-C062-45B9-860A-9B5A8A304536}" />
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{FE124F22-80C9-416E-B75C-82C34C18FC4F}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T220433Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

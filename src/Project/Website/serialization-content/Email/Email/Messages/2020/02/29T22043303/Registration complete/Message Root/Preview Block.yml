@@ -1,0 +1,30 @@
+﻿---
+ID: "7828a456-4ce2-49ec-98a6-8def7e65785d"
+Parent: "c273e3df-6256-4e97-ad82-6fefea2779e1"
+Template: "f5a65243-2f76-402c-9d7f-c34efb3402fa"
+Path: /sitecore/content/Email/Messages/2020/02/29T22043303/Registration complete/Message Root/Preview Block
+DB: master
+BranchID: "8c18055a-eb1e-4358-bc12-26b4e2568910"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{DB5A1354-E8A8-4973-9110-ECDDA0D8F76A}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1dcc8640-e7d3-40d1-a20c-42dcc912e703"
+      Hint: Preview Line 1
+      Value: |
+        This is your preview text. <span class="em_mob_block"></span> Add information about your email&nbsp;here.
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T220433Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "d2bf200e-e0b9-4c81-b7c8-8352b54154d4"
+      Hint: Preview Line 2
+      Value: To view this email in a browser, click here

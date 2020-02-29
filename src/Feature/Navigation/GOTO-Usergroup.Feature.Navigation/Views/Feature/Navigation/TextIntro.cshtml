@@ -1,0 +1,17 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Analytics.Extensions
+@using Sitecore.ExperienceForms.Mvc.Html
+
+@{
+    var startItem = Sitecore.Context.Item;
+}
+<p>
+    <div class="intro">
+        <div class="introtitle">
+            @Html.Sitecore().Field("Intro", startItem)
+        </div>
+        <div class="description">
+            @Html.Sitecore().Field("Description", startItem)
+        </div>
+    </div>
+</p>

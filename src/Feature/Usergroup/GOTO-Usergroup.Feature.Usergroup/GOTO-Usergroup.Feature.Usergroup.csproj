@@ -178,11 +178,7 @@
     <Content Include="Views\Feature\Usergroup\UsergroupMembers.cshtml" />
     <Content Include="Views\Feature\Usergroup\UsergroupOrganizers.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\..\..\Foundation\XConnect\GOTO-Usergroup.Foundation.XConnect\GOTO-Usergroup.Foundation.XConnect.csproj">
       <Project>{E6F6C3E7-DCFD-4B04-9B25-8F3BF6F4B681}</Project>

@@ -1,0 +1,78 @@
+﻿---
+ID: "c273e3df-6256-4e97-ad82-6fefea2779e1"
+Parent: "cd2092db-dd00-4824-bf2e-5d20973f5af9"
+Template: "3f12d78c-b7b7-4157-98fc-da3322ee1a5b"
+Path: /sitecore/content/Email/Messages/2020/02/29T22043303/Registration complete/Message Root
+DB: master
+BranchID: "8c18055a-eb1e-4358-bc12-26b4e2568910"
+SharedFields:
+- ID: "9c6106ea-7a5a-48e2-8cad-f0f693b1e2d4"
+  Hint: __Read Only
+  Type: Checkbox
+  Value: 1
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{9BE56802-4ADD-46F6-BEDC-B89EA88D5C83}">
+        <r
+          ds=""
+          id="{69EB7A6D-ACEF-4D06-A923-804918AA245E}"
+          par=""
+          ph="msg-html-title"
+          uid="{526AFB07-CE11-43CC-A8A1-4B906BC54FE6}" />
+        <r
+          ds="{7828A456-4CE2-49EC-98A6-8DEF7E65785D}"
+          id="{5A67BD04-F5C3-4114-98CE-B4DB50DC980B}"
+          par=""
+          ph="preview-area"
+          uid="{757549A5-5B45-4AF8-A37F-D5D4B7B9D1C4}" />
+        <r
+          ds="{10E0F24F-6F46-4900-96E6-E6F45AEBDAAE}"
+          id="{E89D305C-CF92-4445-ABC1-9EAB38F72ED7}"
+          par=""
+          ph="header-area"
+          uid="{FC745491-FBE9-4361-BEC6-9E10580ABFA2}" />
+        <r
+          ds="{4AB4DAE5-7F9F-4CEB-83F5-EB08D91C808A}"
+          id="{EF1E93F3-9F52-4D3E-9A98-E7718D59557D}"
+          par=""
+          ph="header-area"
+          uid="{B5637155-4BE0-4A3A-B7A2-3BFB3D95497B}" />
+        <r
+          ds="{A3647175-1911-47A8-A3C4-841DC713C97D}"
+          id="{BFAF85F4-0256-4846-BDE3-D44C74FE6A42}"
+          par=""
+          ph="body-area"
+          uid="{F5732F2A-0913-45B2-B68F-C4E07AECA369}" />
+        <r
+          ds="{07BC61B1-A441-4ACC-8F85-4F00DA12F389}"
+          id="{340A8528-3E66-4DF6-82E0-4228CC8C684F}"
+          par=""
+          ph="body-area"
+          uid="{BB09D4AC-2CB1-49FD-9F45-00AE88BDE543}" />
+        <r
+          ds="{B099F630-4442-4AF7-87F9-E781100C1C9A}"
+          id="{BF323449-F257-4EFB-9FF5-8248CA227393}"
+          par=""
+          ph="footer-area"
+          uid="{D655EFD4-23A4-40EC-A4DD-FC06413C8C52}" />
+      </d>
+    </r>
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{FA2394B1-5E36-4CE6-961C-1C4C8241D89D}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T220433Z
+    - ID: "c0bfd467-0b74-4efe-b7c9-1ecf7f0e5370"
+      Hint: Subject
+      Value: Thank you for registering $fullname$

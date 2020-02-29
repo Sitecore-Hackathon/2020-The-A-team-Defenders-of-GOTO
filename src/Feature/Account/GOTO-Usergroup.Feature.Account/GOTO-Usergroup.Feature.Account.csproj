@@ -478,7 +478,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
     <Compile Include="Helper\FieldHelper .cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SubmitActions\LoginUser\LoginUser.cs" />
@@ -489,11 +488,7 @@
   <ItemGroup>
     <Content Include="Views\Web.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="App_Config\Include\GOTO-Usergroup\Feature\Account\Serialization.config">
       <SubType>Designer</SubType>
