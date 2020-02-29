@@ -1,0 +1,23 @@
+﻿---
+ID: "d814e23c-4445-4e16-9cab-a0769001ebb0"
+Parent: "b5350d9a-ceee-4d15-b9ff-797ceacccdc7"
+Template: "a60edcaf-1285-46b5-8380-d790bb8c8708"
+Path: /sitecore/system/Settings/Forms/Field Types/Basic/ItemId
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: office/32x32/information.png
+- ID: "73f3c325-9b2a-4854-b698-038e06887fcd"
+  Hint: Property Editor
+  Value: "{1C601B81-8EA6-40A5-9144-34FCC938B62A}"
+- ID: "8f40d151-4155-4564-b343-fa445410e3e0"
+  Hint: Icon
+  Value: officeWhite/32x32/information.png
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Value: "20200229T165807:637185922875348186Z"
