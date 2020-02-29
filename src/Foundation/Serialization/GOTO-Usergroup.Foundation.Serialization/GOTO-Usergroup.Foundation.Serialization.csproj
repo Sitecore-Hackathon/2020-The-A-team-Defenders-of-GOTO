@@ -81,6 +81,9 @@
     <Reference Include="Unicorn, Version=4.1.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Unicorn.Core.4.1.2-pre1\lib\net452\Unicorn.dll</HintPath>
     </Reference>
+    <Reference Include="Unicorn.Users, Version=4.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Unicorn.Users.Core.4.1.2-pre1\lib\net452\Unicorn.Users.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
@@ -113,6 +116,9 @@
     <Content Include="App_Config\Include\GOTO-Usergroup\Foundation\Serialization\z.Unicorn.config" />
     <Content Include="App_Config\Include\GOTO-Usergroup\Foundation\Serialization\Rainbow.config" />
     <Content Include="App_Config\Include\GOTO-Usergroup\Foundation\Serialization\Unicorn.base.config" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.Users.DataProvider.config" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.Users.config" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Default.Users.config.example" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
