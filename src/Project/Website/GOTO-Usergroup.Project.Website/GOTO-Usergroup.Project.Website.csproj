@@ -121,7 +121,7 @@
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <Content Include="Views\Project\Website\Layouts\Layout.cshtml" />
-    <Content Include="Views\Project\Website\Layouts\MVC Layout Outer.cshtml" />
+    <Content Include="Views\Project\Website\Layouts\MVCLayoutOuter.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
