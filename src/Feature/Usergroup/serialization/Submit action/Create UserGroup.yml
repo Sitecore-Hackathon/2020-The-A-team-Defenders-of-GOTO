@@ -10,7 +10,7 @@ SharedFields:
   Value: Office/32x32/users_crowd.png
 - ID: "2c6e7306-2871-473a-9149-71443182b8e8"
   Hint: Model Type
-  Value: GOTO_Usergroup.Feature.Usergroup.SubmitActions.CreateUsergroup, GOTO_Usergroup.Feature.Usergroup
+  Value: GOTO_Usergroup.Feature.Usergroup.SubmitActions.CreateUsergroup
 Languages:
 - Language: en
   Versions:
