@@ -1,23 +1,29 @@
 ﻿---
-ID: "672828a3-5bb8-4fc3-af26-ccd435e35af8"
-Parent: "257f74db-f3a2-4e63-bf9b-d600280f2bb9"
-Template: "94a46d66-b1b8-405d-aae4-7b5a9cd61c5e"
-Path: /sitecore/Forms/Create usergroup/Page/Submit Button
+ID: "005fa091-df3e-4a7b-b940-655a56fa0377"
+Parent: "33f19709-e9d1-4fa8-a959-4df79048d792"
+Template: "0908030b-4564-42ea-a6fa-c7a5a2d921a8"
+Path: /sitecore/Forms/Create usergroup/Page/Section/ShortName
 DB: master
 SharedFields:
+- ID: "71061c01-a495-4bf3-a52c-d378346bfae2"
+  Hint: Max Length
+  Value: 8
 - ID: "71c6de8e-4718-4977-b83e-b49552ee14b0"
   Hint: Conditions
   Value: |
     {"fieldConditions":[]}
 - ID: "7abaa3f6-6ec0-4b65-a463-7919bfae55aa"
   Hint: Css Class
-  Value: "btn btn-primary"
+  Value: "form-control"
 - ID: "84ece662-5034-40cb-9c60-744db64bb294"
   Hint: Field Key
-  Value: E6AD7BCBA9434B21AA435BE13099714E
+  Value: 149864CA34954F40BF90628BBF09AFA5
+- ID: "9f7da002-7b86-436b-8dda-7efe5837b88e"
+  Hint: Min Length
+  Value: 3
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 200
+  Value: 0
 Languages:
 - Language: en
   Versions:
@@ -28,4 +34,4 @@ Languages:
       Value: 20200229T052916Z
     - ID: "71ffd7b2-8b09-4f7b-8a66-1e4cef653e8d"
       Hint: Title
-      Value: Create
+      Value: Short name

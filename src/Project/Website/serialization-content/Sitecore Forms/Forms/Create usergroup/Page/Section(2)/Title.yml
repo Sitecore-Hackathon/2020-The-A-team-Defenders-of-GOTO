@@ -1,26 +1,26 @@
 ﻿---
-ID: "005fa091-df3e-4a7b-b940-655a56fa0377"
-Parent: "257f74db-f3a2-4e63-bf9b-d600280f2bb9"
+ID: "1b84f02a-1aa8-4890-b3f1-6d8b1a82e1de"
+Parent: "0d127219-9eab-47e2-9644-d9d26647305b"
 Template: "0908030b-4564-42ea-a6fa-c7a5a2d921a8"
-Path: /sitecore/Forms/Create usergroup/Page/ShortName
+Path: /sitecore/Forms/Create usergroup/Page/Section(2)/Title
 DB: master
 SharedFields:
-- ID: "71061c01-a495-4bf3-a52c-d378346bfae2"
-  Hint: Max Length
-  Value: 8
 - ID: "71c6de8e-4718-4977-b83e-b49552ee14b0"
   Hint: Conditions
   Value: |
     {"fieldConditions":[]}
+- ID: "7abaa3f6-6ec0-4b65-a463-7919bfae55aa"
+  Hint: Css Class
+  Value: "form-control"
 - ID: "84ece662-5034-40cb-9c60-744db64bb294"
   Hint: Field Key
-  Value: 149864CA34954F40BF90628BBF09AFA5
+  Value: 72793C62B92946DE92C9F953B6E3095C
 - ID: "9f7da002-7b86-436b-8dda-7efe5837b88e"
   Hint: Min Length
-  Value: 3
+  Value: 5
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 100
+  Value: 0
 Languages:
 - Language: en
   Versions:
@@ -31,4 +31,4 @@ Languages:
       Value: 20200229T052916Z
     - ID: "71ffd7b2-8b09-4f7b-8a66-1e4cef653e8d"
       Hint: Title
-      Value: Short name
+      Value: Title
