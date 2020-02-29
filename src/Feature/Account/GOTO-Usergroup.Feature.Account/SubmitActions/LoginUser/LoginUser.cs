@@ -1,53 +1,31 @@
 ﻿using Sitecore.Diagnostics;
 using Sitecore.ExperienceForms.Models;
+using Sitecore.ExperienceForms.Mvc.Models.Fields;
 using Sitecore.ExperienceForms.Processing;
 using Sitecore.ExperienceForms.Processing.Actions;
 using Sitecore.Security.Accounts;
 using Sitecore.Security.Authentication;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 
 namespace GOTO_Usergroup.Feature.Account.SubmitActions.LoginUser
 {
-    public class LoginUser : SubmitActionBase<LoginUserData>
+    public class LoginUser : SubmitActionBase<string>
     {
         public LoginUser(ISubmitActionData submitActionData) : base(submitActionData)
         {
         }
 
-        protected override bool Execute(LoginUserData data, FormSubmitContext formSubmitContext)
+        protected override bool Execute(string data, FormSubmitContext formSubmitContext)
         {
-            Assert.ArgumentNotNull(data, nameof(data));
-            Assert.ArgumentNotNull(formSubmitContext, nameof(formSubmitContext));
 
-            var fields = GetFormFields(data, formSubmitContext);
+            var shortname = ((StringInputViewModel)formSubmitContext.Fields.FirstOrDefault(f => f.Name == "ShortName")).Value;
+            var title = ((StringInputViewModel)formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Title")).Value;
 
-            Assert.IsNotNull(fields, nameof(fields));
-
-            if (UsernameOrPasswordFieldIsNull(fields))
-            {
-                return AbortForm(formSubmitContext);
-            }
-
-            var values = fields.GetFieldValues();
-
-            if (UsernameOrPasswordValueIsNull(values))
-            {
-                return AbortForm(formSubmitContext);
-            }
-
-            var user = Login(values.Username, values.Password);
-
-            if (user == null)
-            {
-
-                return AbortForm(formSubmitContext);
-            }
 
             return true;
         }
+
+
 
         protected virtual User Login(string userName, string password)
         {
@@ -68,17 +46,6 @@ namespace GOTO_Usergroup.Feature.Account.SubmitActions.LoginUser
             return user;
         }
 
-        private LoginUserFormFields GetFormFields(LoginUserData data, FormSubmitContext formSubmitContext)
-        {
-            Assert.ArgumentNotNull(data, nameof(data));
-            Assert.ArgumentNotNull(formSubmitContext, nameof(formSubmitContext));
-
-            return new LoginUserFormFields
-            {
-                Username = Helper.FieldHelper.GetFieldById(data.UserNameFieldId, formSubmitContext.Fields),
-                Password = Helper.FieldHelper.GetFieldById(data.PasswordFieldId, formSubmitContext.Fields)
-            };
-        }
 
         private bool UsernameOrPasswordFieldIsNull(LoginUserFormFields field)
         {
@@ -96,6 +63,12 @@ namespace GOTO_Usergroup.Feature.Account.SubmitActions.LoginUser
         {
             formSubmitContext.Abort();
             return false;
+        }
+
+        protected override bool TryParse(string value, out string target)
+        {
+            target = string.Empty;
+            return true;
         }
 
         internal class LoginUserFormFields

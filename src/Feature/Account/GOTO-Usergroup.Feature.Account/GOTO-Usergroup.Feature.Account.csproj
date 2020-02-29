@@ -482,7 +482,7 @@
     <Compile Include="Helper\FieldHelper .cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SubmitActions\LoginUser\LoginUser.cs" />
-    <Compile Include="SubmitActions\LoginUser\LoginUserData .cs" />
+    <Compile Include="SubmitActions\LogoutUser\LogoutUser.cs" />
     <Compile Include="SubmitActions\RegisterUser\RegisterUser .cs" />
     <Compile Include="SubmitActions\RegisterUser\RegisterUserData.cs" />
   </ItemGroup>

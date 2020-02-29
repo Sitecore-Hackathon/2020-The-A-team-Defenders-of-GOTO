@@ -1,8 +1,8 @@
 ﻿---
-ID: "311bb393-9574-4ee6-b207-c43ac26d735d"
-Parent: "22f22588-1863-4edf-8637-8bceb66a7bf2"
-Template: "886adec1-abf8-40e1-9926-d9189c4e8e1b"
-Path: /sitecore/Forms/Register Form/Page/Email
+ID: "9d36dec1-f43f-4352-a8ea-21cadff4faed"
+Parent: "246c53fd-cba9-4902-8c97-cee3a11083ab"
+Template: "8cddb194-f456-4a75-89b7-346f8f39f95c"
+Path: /sitecore/Forms/Register Form/Page/UserDataSection/EmailSection
 DB: master
 SharedFields:
 - ID: "71c6de8e-4718-4977-b83e-b49552ee14b0"
@@ -11,16 +11,13 @@ SharedFields:
     {"fieldConditions":[]}
 - ID: "7abaa3f6-6ec0-4b65-a463-7919bfae55aa"
   Hint: Css Class
-  Value: "form-control"
+  Value: "form-group"
 - ID: "84ece662-5034-40cb-9c60-744db64bb294"
   Hint: Field Key
-  Value: CC06AC037A154F3491460F48AF2AF8B7
-- ID: "9f7da002-7b86-436b-8dda-7efe5837b88e"
-  Hint: Min Length
-  Value: 0
+  Value: F08B97892D3C482E8C182DA39C625FC3
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 100
+  Value: 0
 Languages:
 - Language: en
   Versions:
@@ -28,7 +25,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20200229T060030Z
-    - ID: "71ffd7b2-8b09-4f7b-8a66-1e4cef653e8d"
-      Hint: Title
-      Value: Email
+      Value: 20200229T144931Z

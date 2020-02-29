@@ -86,9 +86,6 @@ namespace GOTO_Usergroup.Feature.Account.SubmitActions.RegisterUser
                 Email = FieldHelper.GetFieldValueByName("Email", formSubmitContext.Fields),
                 Password = FieldHelper.GetFieldValueByName("Password Confirmation", formSubmitContext.Fields),
                 FullName = FieldHelper.GetFieldValueByName("Full Name", formSubmitContext.Fields),
-                //Email = FieldHelper.GetFieldById(data.EmailFieldId, formSubmitContext.Fields),
-                //Password = FieldHelper.GetFieldById(data.PasswordFieldId, formSubmitContext.Fields),
-                //FullName = FieldHelper.GetFieldById(data.FullNameFieldId, formSubmitContext.Fields),
             };
         }
 

@@ -1,0 +1,35 @@
+﻿---
+ID: "7239ef37-1e5f-4392-a734-a4978f0f990b"
+Parent: "ec326172-c897-43bb-ac43-57242e31f36f"
+Template: "b4eed17d-1a55-477f-8923-b974866c810e"
+Path: /sitecore/content/Frontpage/Login
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{D390C691-8911-4EC1-AD8F-41EAC0A8D1E5}">
+        <r
+          ds="{51C01E26-DB53-4CFE-BD8C-C3512267B215}"
+          id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
+          par=""
+          ph="content"
+          uid="{4B0F23FF-D7CF-462F-AC9E-EE3B707E381B}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T151652Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
