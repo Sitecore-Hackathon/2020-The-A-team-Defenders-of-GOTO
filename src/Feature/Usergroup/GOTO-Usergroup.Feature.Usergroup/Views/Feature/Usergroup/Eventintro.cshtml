@@ -1,0 +1,13 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Analytics.Extensions
+@using Sitecore.ExperienceForms.Mvc.Html
+@{
+    var startItem = Sitecore.Context.Item;
+
+}
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">@Html.Sitecore().Field("Title", startItem)</h1>
+        <p class="lead">@Html.Sitecore().Field("Description", startItem)</p>
+    </div>
+</div>

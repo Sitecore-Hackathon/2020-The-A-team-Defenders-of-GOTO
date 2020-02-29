@@ -25,6 +25,26 @@ SharedFields:
           par=""
           ph="body"
           uid="{604A6FC6-F95E-401B-85D2-295D58632995}" />
+        <r
+          id="{1EBF60B5-5DF7-4A3E-9CED-46A3B5284940}"
+          ph="header"
+          uid="{8A0A8C78-4B9D-4050-A241-D21A168C80CC}" />
+        <r
+          id="{5C23CD03-4D9E-4E0A-A1B2-B3B3571F986D}"
+          ph="nav"
+          uid="{6A9C7258-2E99-4650-B3EE-4FE9BB5508A7}" />
+        <r
+          ds="{A319F882-E9E8-408E-BAB2-9B7C1A4302C2}"
+          id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
+          par=""
+          ph="nav-auth"
+          uid="{6008B78D-AF82-4382-99DB-6247083ADD63}" />
+        <r
+          ds="{51C01E26-DB53-4CFE-BD8C-C3512267B215}"
+          id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
+          par=""
+          ph="nav-not-auth"
+          uid="{9C1725B2-0C1F-4945-B674-337E036778D6}" />
       </d>
     </r>
 Languages:

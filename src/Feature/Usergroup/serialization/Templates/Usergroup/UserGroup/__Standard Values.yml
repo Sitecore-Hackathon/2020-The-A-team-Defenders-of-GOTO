@@ -43,6 +43,26 @@ SharedFields:
           par=""
           ph="body"
           uid="{498C3552-21D8-41B0-90F5-C6D12869A0BD}" />
+        <r
+          ds="{A319F882-E9E8-408E-BAB2-9B7C1A4302C2}"
+          id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
+          par=""
+          ph="nav-auth"
+          uid="{741AA39A-C7D0-4FA5-9F44-A318747119F8}" />
+        <r
+          ds="{51C01E26-DB53-4CFE-BD8C-C3512267B215}"
+          id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
+          par=""
+          ph="nav-not-auth"
+          uid="{D06F8D19-E8DF-4254-8C39-3810969D7EF7}" />
+        <r
+          id="{1EBF60B5-5DF7-4A3E-9CED-46A3B5284940}"
+          ph="header"
+          uid="{B95C7539-662E-42C1-BDC3-A1B604DB0B2C}" />
+        <r
+          id="{5C23CD03-4D9E-4E0A-A1B2-B3B3571F986D}"
+          ph="nav"
+          uid="{235842B7-360A-4CFA-9E70-0B5CE2C3F605}" />
       </d>
     </r>
 Languages:

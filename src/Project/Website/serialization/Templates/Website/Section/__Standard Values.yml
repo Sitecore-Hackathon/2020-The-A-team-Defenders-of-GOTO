@@ -1,23 +1,10 @@
 ﻿---
-ID: "ec326172-c897-43bb-ac43-57242e31f36f"
-Parent: "0de95ae4-41ab-4d01-9eb0-67441b7c2450"
-Template: "fb53feb4-371b-4577-ad86-c7e89e5d2471"
-Path: /sitecore/content/Frontpage
+ID: "b6a1e7d4-fd83-4dcc-b910-fd5c67fa81e1"
+Parent: "5979c496-3ced-42a9-8139-74d0501453f7"
+Template: "5979c496-3ced-42a9-8139-74d0501453f7"
+Path: /sitecore/templates/Project/Website/Section/__Standard Values
 DB: master
 SharedFields:
-- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
-  Hint: __Masters
-  Type: TreelistEx
-  Value: |
-    {5979C496-3CED-42A9-8139-74D0501453F7}
-    {8E00A955-8AD1-4FB1-8683-57275F142347}
-- ID: "8d8d60c8-7dad-4a91-b63b-ef54cc5c22fe"
-  Hint: Site title
-  Value: "GOTO-Usergroup"
-- ID: "b96078ab-eb51-45b8-8062-14203a97e379"
-  Hint: Site logo
-  Value: |
-    <image mediaid="{847DE4C9-F236-4286-B876-1115414E2E90}" />
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
@@ -29,23 +16,23 @@ SharedFields:
         <r
           id="{1EBF60B5-5DF7-4A3E-9CED-46A3B5284940}"
           ph="header"
-          uid="{0A356AD3-C9B9-417E-B7D1-0C5B99A42AA7}" />
+          uid="{C552BCD6-1CE9-48DE-8BA6-207BE09B9B13}" />
         <r
           id="{5C23CD03-4D9E-4E0A-A1B2-B3B3571F986D}"
           ph="nav"
-          uid="{71A0DA8E-05DC-42B8-8018-61D02A8C0167}" />
+          uid="{535F4D8B-90E3-4AA6-AFC3-5176DF303270}" />
         <r
           ds="{51C01E26-DB53-4CFE-BD8C-C3512267B215}"
           id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
           par=""
           ph="nav-not-auth"
-          uid="{F473CD95-DDE8-41B8-962E-2D34A9B22171}" />
+          uid="{B6FB9243-D28C-4037-9259-C6F201E87317}" />
         <r
           ds="{A319F882-E9E8-408E-BAB2-9B7C1A4302C2}"
           id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
           par=""
           ph="nav-auth"
-          uid="{E96B55A6-001F-465E-B9AA-4BEDDF605FDB}" />
+          uid="{44393C15-0025-4CC7-A009-DA8AE0884491}" />
       </d>
     </r>
 Languages:
@@ -55,4 +42,8 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20200229T023217Z
+      Value: 20200229T201507Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

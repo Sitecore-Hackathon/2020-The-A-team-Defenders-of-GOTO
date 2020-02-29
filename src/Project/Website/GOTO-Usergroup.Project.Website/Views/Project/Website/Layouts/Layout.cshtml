@@ -6,14 +6,11 @@
 }
 
 <div class="container">
+    @Html.Sitecore().Placeholder("header")
 
-    @{
-
-        Html.RenderPartial("/Views/Project/Website/Navigation.cshtml");
-    }
     <div class="content">
         @Html.Sitecore().Placeholder("body")
-        
+
         <p>
             <a class="btn btn-primary" data-toggle="collapse" href="#collapseForms" role="button" aria-expanded="false" aria-controls="collapseForms">
                 Create new

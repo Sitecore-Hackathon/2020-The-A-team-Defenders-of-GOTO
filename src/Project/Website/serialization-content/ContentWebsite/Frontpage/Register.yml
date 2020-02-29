@@ -1,7 +1,7 @@
 ﻿---
 ID: "394ce114-6b62-4e7a-ae67-74fa2ee23242"
 Parent: "ec326172-c897-43bb-ac43-57242e31f36f"
-Template: "8e00a955-8ad1-4fb1-8683-57275f142347"
+Template: "5979c496-3ced-42a9-8139-74d0501453f7"
 Path: /sitecore/content/Frontpage/Register
 DB: master
 SharedFields:
@@ -14,7 +14,11 @@ SharedFields:
       <d
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
         <r
-          uid="{E7C8B76D-36FB-4D06-82C8-58F2C9DAAE5F}"
+          uid="{AC0798DA-FF91-43AA-89FA-B5B28429EF3E}"
+          p:after="*[1=2]"
+          s:ds="{9C4D9A0D-0243-4C77-8DBA-5EF0439C1424}"
+          s:id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
+          s:par=""
           s:ph="body" />
       </d>
     </r>

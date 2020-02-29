@@ -1,0 +1,23 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Analytics.Extensions
+@using Sitecore.ExperienceForms.Mvc.Html
+<ul class="navbar-nav navbar-right">
+
+    @if (Sitecore.Context.User.IsAuthenticated)
+    {
+        <li class="nav-item">
+            @Html.Sitecore().Placeholder("nav-auth")
+        </li>
+    }
+    else
+    {
+        <li class="nav-item dropdown">
+            <a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Login</a>
+            <ul class="dropdown-menu" style="width:270px;padding:20px">
+                <li>
+                    @Html.Sitecore().Placeholder("nav-not-auth")
+                </li>
+            </ul>
+        </li>
+    }
+</ul>
