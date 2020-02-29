@@ -1,0 +1,22 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Analytics.Extensions
+@using Sitecore.ExperienceForms.Mvc.Html
+@{
+    var startItem = Sitecore.Context.Item;
+
+}
+<div class="row" style="margin: 20px 0">
+    @foreach (Sitecore.Data.Items.Item child in startItem.GetChildren())
+    {
+    <div class="col-sm-4" style="margin-top:30px">
+        <div class="card">
+            @Html.Sitecore().Field("Image", child, new { @class = "card-img-top" })
+            <div class="card-body">
+                <h5 class="card-title">@Html.Sitecore().Field("Title", child)</h5>
+                <p class="card-text">@Html.Sitecore().Field("Description", child)</p>
+                <a href="@Sitecore.Links.LinkManager.GetItemUrl(child)" class="btn btn-primary">Go to user group</a>
+            </div>
+        </div>
+    </div>
+    }
+</div>

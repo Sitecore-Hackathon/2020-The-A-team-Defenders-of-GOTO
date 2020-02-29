@@ -1,20 +1,23 @@
 ﻿---
-ID: "b2ed566e-f869-4d50-bff1-fa5c61b325b7"
-Parent: "8918f2e5-6e72-435c-9860-b11be7101ba4"
-Template: "5ac7621e-9f18-4569-bcec-f5bf8ba1f4d7"
-Path: /sitecore/Forms/Create Event/Page/Date
+ID: "ad09b8e7-f9c1-4685-bbfe-780e21836cfa"
+Parent: "257f74db-f3a2-4e63-bf9b-d600280f2bb9"
+Template: "8cddb194-f456-4a75-89b7-346f8f39f95c"
+Path: /sitecore/Forms/Create usergroup/Page/Section(4)
 DB: master
 SharedFields:
 - ID: "71c6de8e-4718-4977-b83e-b49552ee14b0"
   Hint: Conditions
   Value: |
     {"fieldConditions":[]}
+- ID: "7abaa3f6-6ec0-4b65-a463-7919bfae55aa"
+  Hint: Css Class
+  Value: "form-group"
 - ID: "84ece662-5034-40cb-9c60-744db64bb294"
   Hint: Field Key
-  Value: A392B607DEE546C0A8586F17336068EB
+  Value: 198324450F7B46FFBC4D55A25BA76358
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 400
+  Value: 200
 Languages:
 - Language: en
   Versions:
@@ -22,7 +25,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20200229T155733Z
-    - ID: "71ffd7b2-8b09-4f7b-8a66-1e4cef653e8d"
-      Hint: Title
-      Value: Date
+      Value: 20200229T173456Z
