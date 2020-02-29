@@ -1,21 +1,17 @@
 ﻿---
-ID: "d9193eb6-43ba-467d-be08-7605b379a453"
-Parent: "07815ea2-8100-4619-89ce-5e301eb7534a"
+ID: "df9da129-ab7b-40f5-8a4f-e82f514d7d04"
+Parent: "1cf940ba-1536-4518-aeef-b0de73928018"
 Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
-Path: /sitecore/layout/Placeholder Settings/Project/Website/createforms
+Path: /sitecore/layout/Placeholder Settings/Feature/Navigation/navnotauthenticated
 DB: master
 SharedFields:
 - ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
   Hint: Placeholder Key
-  Value: createforms
+  Value: "nav-not-auth"
 - ID: "e391b526-d0c5-439d-803e-17512eae6222"
   Hint: Allowed Controls
   Type: TreelistEx
-  Value: |
-    {B74137E5-B324-407C-AFC8-4567EB4C0022}
-    {6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}
-    {6775AD41-0304-471C-B529-B5A08DA65538}
-    {563FF068-0DB3-45DD-BDC9-20516323F25E}
+  Value: "{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
 Languages:
 - Language: en
   Versions:

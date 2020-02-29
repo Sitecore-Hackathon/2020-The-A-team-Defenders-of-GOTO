@@ -18,13 +18,82 @@ SharedFields:
           id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
           par=""
           ph="body"
-          uid="{6CD255CF-BEA1-47AC-B844-10BBFA37BF98}" />
+          uid="{6CD255CF-BEA1-47AC-B844-10BBFA37BF98}">
+          <rls>
+            <ruleset
+              pet="true">
+              <rule
+                name="Not logged in"
+                uid="{E173A6DC-4EC0-40AC-8333-A9A636FBE1CB}">
+                <conditions>
+                  <condition
+                    id="{EA0642FA-500B-4B2F-B264-765E771C516F}"
+                    uid="022AA87DB9064A04B5A5C3FB2C65F932" />
+                </conditions>
+                <actions>
+                  <action
+                    id="{25F351A1-712D-45F8-857D-8AD95BB2ACE9}"
+                    uid="481B74981BE24110A55BC3F0E6A0FC61" />
+                </actions>
+              </rule>
+              <rule
+                name="Already Subscribed"
+                uid="{62D8E9DD-03C0-4989-8CAA-F9DC7206B545}">
+                <conditions>
+                  <condition
+                    id="{61149788-6E2A-4F8F-BB29-5E8D595B6957}"
+                    uid="A96D1979D7C64D9CBFE05814913BD005"
+                    FieldName="Attendees" />
+                </conditions>
+                <actions>
+                  <action
+                    id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                    uid="5FC0BA3946A1427CB5834CE5A6000081"
+                    DataSource="{790E15B3-8C48-49D1-9813-8355C53DA06D}" />
+                </actions>
+              </rule>
+              <rule
+                uid="{00000000-0000-0000-0000-000000000000}"
+                name="Default">
+                <conditions>
+                  <condition
+                    id="{4888ABBB-F17D-4485-B14B-842413F88732}"
+                    uid="9F94160533DD47E9AE3036B0746E270B" />
+                </conditions>
+                <actions>
+                  <action
+                    id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                    uid="95A3D96D5C864C4CBEDDC25A2BEB4F34"
+                    DataSource="{EA199C7C-AD7E-4377-A785-147692074CF0}" />
+                </actions>
+              </rule>
+            </ruleset>
+          </rls>
+        </r>
         <r
-          ds="{790E15B3-8C48-49D1-9813-8355C53DA06D}"
+          id="{1EBF60B5-5DF7-4A3E-9CED-46A3B5284940}"
+          ph="header"
+          uid="{6EE0970A-EDC8-4397-A697-3199CD178B0A}" />
+        <r
+          id="{5C23CD03-4D9E-4E0A-A1B2-B3B3571F986D}"
+          ph="nav"
+          uid="{953CB193-FBE8-4299-B090-7BF8E942A100}" />
+        <r
+          ds="{A319F882-E9E8-408E-BAB2-9B7C1A4302C2}"
           id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
           par=""
+          ph="nav-auth"
+          uid="{D18F08FB-9327-4EB1-8974-2C6B178BABE7}" />
+        <r
+          ds="{51C01E26-DB53-4CFE-BD8C-C3512267B215}"
+          id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
+          par=""
+          ph="nav-not-auth"
+          uid="{61F83F01-D61B-428C-9DB4-83DBF1480218}" />
+        <r
+          id="{F62DC39B-B5A1-4BF4-A250-9BA87EDAA82F}"
           ph="body"
-          uid="{604A6FC6-F95E-401B-85D2-295D58632995}" />
+          uid="{5E8FFA99-B321-46F2-9212-BFFBDF4768A2}" />
       </d>
     </r>
 Languages:

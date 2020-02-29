@@ -9,7 +9,7 @@ using Sitecore.Security.Accounts;
 using Sitecore.Web;
 using System;
 using Microsoft.Extensions.DependencyInjection;
-using Sitecore.Data;
+using GOTO_Usergroup.Foundation.XConnect;
 
 namespace GOTO_Usergroup.Feature.Account.SubmitActions.RegisterUser
 {
@@ -73,9 +73,8 @@ namespace GOTO_Usergroup.Feature.Account.SubmitActions.RegisterUser
                 user.Profile.FullName = name;
                 user.Profile.Save();
 
+                Sitecore.Analytics.Tracker.Current.Session.IdentifyAs(Constants.XConnectSourceName, email);
                 _xconnectService.SaveContactDetails(email, name);
-
-                TriggerGoal(new ID("{8FFB183B-DA1A-4C74-8F3A-9729E9FCFF6A}"), email, name);
             }
             catch (Exception ex)
             {
@@ -83,31 +82,6 @@ namespace GOTO_Usergroup.Feature.Account.SubmitActions.RegisterUser
                 return false;
             }
 
-            return true;
-        }
-
-        public static bool TriggerGoal(Sitecore.Data.ID goalId, string email, string name)
-        {
-            //Check if tracker is active or not
-            if (!Sitecore.Analytics.Tracker.IsActive)
-            {
-                Sitecore.Analytics.Tracker.StartTracking();
-            }
-
-            if (Sitecore.Analytics.Tracker.IsActive && Sitecore.Analytics.Tracker.Current.CurrentPage != null)
-            {
-                Sitecore.Data.Items.Item goalItem = Sitecore.Context.Database.GetItem(goalId);
-                if (goalItem != null)
-                {
-                    var goalTrigger = Sitecore.Analytics.Tracker.MarketingDefinitions.Goals[goalItem.ID.ToGuid()];
-                    var goalEventData = Sitecore.Analytics.Tracker.Current.CurrentPage.RegisterGoal(goalTrigger);
-                    goalEventData.Data = goalItem["Name"];
-                    goalEventData.ItemId = goalItem.ID.ToGuid();
-                    goalEventData.DataKey = goalItem.Paths.Path;
-                    goalEventData.Text = $"{name} with {email} registed an account";
-                    Sitecore.Analytics.Tracker.Current.Interaction.AcceptModifications();
-                }
-            }
             return true;
         }
 

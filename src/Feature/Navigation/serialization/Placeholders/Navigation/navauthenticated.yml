@@ -1,0 +1,22 @@
+﻿---
+ID: "b31c2f1c-e80a-472a-b857-147d21e6e5d8"
+Parent: "1cf940ba-1536-4518-aeef-b0de73928018"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/Feature/Navigation/navauthenticated
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: "nav-auth"
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: "{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T164940Z

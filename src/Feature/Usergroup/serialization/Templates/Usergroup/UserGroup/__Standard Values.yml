@@ -36,13 +36,82 @@ SharedFields:
           id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
           par=""
           ph="body"
-          uid="{FFF92114-3520-4AEA-ACAD-450B987195FF}" />
+          uid="{FFF92114-3520-4AEA-ACAD-450B987195FF}">
+          <rls>
+            <ruleset
+              pet="true">
+              <rule
+                name="Where the user is anonymous"
+                uid="{0F62357B-8833-4828-90B8-3BC0C7A634C6}">
+                <conditions>
+                  <condition
+                    id="{EA0642FA-500B-4B2F-B264-765E771C516F}"
+                    uid="CA61BA72E29B4D908A167224614BA563" />
+                </conditions>
+                <actions>
+                  <action
+                    id="{25F351A1-712D-45F8-857D-8AD95BB2ACE9}"
+                    uid="F2A3D5865C7148609B1295BF8087C984" />
+                </actions>
+              </rule>
+              <rule
+                name="Where the user is already on list"
+                uid="{0A668FB3-96EB-4A63-A154-38DA9B44124A}">
+                <conditions>
+                  <condition
+                    id="{61149788-6E2A-4F8F-BB29-5E8D595B6957}"
+                    uid="BCDA89D4D4A2438F99A508BEC586C5CE"
+                    FieldName="Members" />
+                </conditions>
+                <actions>
+                  <action
+                    id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                    uid="6AF6F21D90BD47F885DFBB35F912A3B1"
+                    DataSource="{60026F75-7B64-4CD6-B06B-802EE4B4C362}" />
+                </actions>
+              </rule>
+              <rule
+                uid="{00000000-0000-0000-0000-000000000000}"
+                name="Default">
+                <conditions>
+                  <condition
+                    id="{4888ABBB-F17D-4485-B14B-842413F88732}"
+                    uid="DB9B68DE4106494F8DB86DA74C25C7D2" />
+                </conditions>
+                <actions>
+                  <action
+                    id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                    uid="A7E78309F34846E583C7A79AFDA6030C"
+                    DataSource="{60026F75-7B64-4CD6-B06B-802EE4B4C362}" />
+                </actions>
+              </rule>
+            </ruleset>
+          </rls>
+        </r>
         <r
-          ds="{60026F75-7B64-4CD6-B06B-802EE4B4C362}"
+          ds="{A319F882-E9E8-408E-BAB2-9B7C1A4302C2}"
           id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
           par=""
+          ph="nav-auth"
+          uid="{9E5F3D56-3414-4AC1-9D03-CC87A6E86369}" />
+        <r
+          ds="{51C01E26-DB53-4CFE-BD8C-C3512267B215}"
+          id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
+          par=""
+          ph="nav-not-auth"
+          uid="{D39AAFD0-DA3F-44F1-9283-036D58D1CAEE}" />
+        <r
+          id="{1EBF60B5-5DF7-4A3E-9CED-46A3B5284940}"
+          ph="header"
+          uid="{474FBACE-2F08-4EAC-92B0-D27FE9F9BA20}" />
+        <r
+          id="{5C23CD03-4D9E-4E0A-A1B2-B3B3571F986D}"
+          ph="nav"
+          uid="{D79CFB28-0E3B-4FBE-9785-31FA1B3E7B06}" />
+        <r
+          id="{510C62CA-916F-4DB4-B67C-C283CFF37FEC}"
           ph="body"
-          uid="{498C3552-21D8-41B0-90F5-C6D12869A0BD}" />
+          uid="{207D6BAA-FE17-4E59-88A1-59B863E409B3}" />
       </d>
     </r>
 Languages:

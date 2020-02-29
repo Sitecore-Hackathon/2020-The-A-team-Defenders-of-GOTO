@@ -13,20 +13,27 @@ SharedFields:
   Hint: __Renderings
   Type: layout
   Value: |
-    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
       <d
-        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
-        l="{D390C691-8911-4EC1-AD8F-41EAC0A8D1E5}">
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
         <r
-          ds="{9AC5792F-05E2-4BF9-9385-C36ACAF22F14}"
-          id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
-          par=""
-          ph="createforms"
-          uid="{0F74BBAF-6E6F-465A-85AE-ECF7B9B4D2DF}" />
+          uid="{0F74BBAF-6E6F-465A-85AE-ECF7B9B4D2DF}"
+          p:before="*"
+          s:ds="{9AC5792F-05E2-4BF9-9385-C36ACAF22F14}"
+          s:id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
+          s:par=""
+          s:ph="createforms" />
         <r
-          id="{B74137E5-B324-407C-AFC8-4567EB4C0022}"
-          ph="body"
-          uid="{0824025C-3FD3-4FCA-BF84-136904DBE8CC}" />
+          uid="{0824025C-3FD3-4FCA-BF84-136904DBE8CC}"
+          p:after="r[@uid='{0F74BBAF-6E6F-465A-85AE-ECF7B9B4D2DF}']"
+          s:id="{B74137E5-B324-407C-AFC8-4567EB4C0022}"
+          s:ph="body" />
+        <r
+          uid="{CDC4D9F3-3985-4883-8701-A8493C26C56F}"
+          p:after="*[1=2]"
+          s:id="{510C62CA-916F-4DB4-B67C-C283CFF37FEC}"
+          s:ph="body" />
       </d>
     </r>
 Languages:

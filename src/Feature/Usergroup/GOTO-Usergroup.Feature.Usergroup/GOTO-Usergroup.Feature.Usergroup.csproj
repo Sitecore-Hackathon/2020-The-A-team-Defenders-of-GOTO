@@ -154,6 +154,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RenderingConditions\ContactSubscribedToListFromField.cs" />
     <Compile Include="SubmitActions\CreateEvent.cs" />
     <Compile Include="SubmitActions\LeaveList.cs" />
     <Compile Include="SubmitActions\JoinList.cs" />
@@ -171,6 +172,8 @@
     <Content Include="Views\Feature\Usergroup\Usergroups.cshtml" />
     <Content Include="Views\Feature\Usergroup\Usergroupintro.cshtml" />
     <Content Include="Views\Feature\Usergroup\Events.cshtml" />
+    <Content Include="Views\Feature\Usergroup\EventAttendees.cshtml" />
+    <Content Include="Views\Feature\Usergroup\Eventintro.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
