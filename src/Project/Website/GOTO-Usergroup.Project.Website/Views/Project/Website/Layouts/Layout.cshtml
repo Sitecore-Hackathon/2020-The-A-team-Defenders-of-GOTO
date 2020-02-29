@@ -2,16 +2,13 @@
 @using Sitecore.Mvc.Analytics.Extensions
 @using Sitecore.ExperienceForms.Mvc.Html
 @{
-    Layout = null;
+    Layout ="MvcOuterLayout.cshtml";
 }
 
 <!DOCTYPE html>
 
 <html>
 <head>
-    @Html.Sitecore().VisitorIdentification()
-    @Html.RenderFormStyles()
-    @Html.RenderFormScripts()
     <title>GOTO Usergroup</title>
     <style type="text/css">
         body {
