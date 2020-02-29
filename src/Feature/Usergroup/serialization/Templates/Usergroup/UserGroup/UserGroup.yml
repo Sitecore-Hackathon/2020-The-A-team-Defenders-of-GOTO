@@ -1,0 +1,14 @@
+﻿---
+ID: "b3e82f0a-3a73-41d4-87ef-9db82f8c5e5d"
+Parent: "b6ef3982-5312-46ca-8934-e3dad6f0d53a"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/Usergroup/UserGroup/UserGroup
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T020950Z

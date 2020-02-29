@@ -1,0 +1,14 @@
+﻿---
+ID: "6ba530cf-ddd3-49d1-8e14-080c32171e68"
+Parent: "eb03188c-c8da-49c5-8a41-9b3ae8dc2a75"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/Usergroup/Event/Event
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T021824Z

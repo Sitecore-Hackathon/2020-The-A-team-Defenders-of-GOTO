@@ -1,0 +1,14 @@
+﻿---
+ID: "13ca22d0-41d6-42b3-bb38-d26c542aa03f"
+Parent: "765f817c-b216-43f6-9e8d-c99bf4527fcb"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/Website/Suggestion/Suggestion
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T024818Z
