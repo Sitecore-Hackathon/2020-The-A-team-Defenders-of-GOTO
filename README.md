@@ -56,4 +56,4 @@ We would have loved to dig further into one of these more elaborate functionalit
 
 ## Video
 
-[![Video Demostration](images/yt.png?raw=true)](https://youtu.be/esH0gBIHsgo)
+[![Video Demostration](./documentation/images/yt.png?raw=true)](https://youtu.be/Q3d2jF16AXE)
