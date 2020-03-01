@@ -26,6 +26,7 @@ namespace GOTO_Usergroup.Feature.Usergroup.SubmitActions
             var userGroupId = Guid.Parse(((StringInputViewModel)formSubmitContext.Fields.FirstOrDefault(f => f.Name == "ListId")).Value);
             var email = Sitecore.Analytics.Tracker.Current.Contact.Identifiers.FirstOrDefault(i => i.Source == Constants.XConnectSourceName)?.Identifier;
             _xconnectService.SubscribeContact(email, new List<Guid> { userGroupId });
+            //it was simply too fast... without the sleeps, xconnect returned the old values when the page reloaded. But hey, who doesn't need a break?
             System.Threading.Thread.Sleep(2000);
 
             return true;
