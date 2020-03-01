@@ -44,12 +44,13 @@ In order to create an event you navigate to a Usergroup. If you're an organizer 
 Unfortunately we have been experiencing a few bugs which we have not been able to iron out before deadline.
 1. As mentioned earlier, we're having issues with EXM sending messages through Sendgrid - at least to our accounts. We can see that Sendgrid receives the messages.
 2. The forms are having issues with several special case characters. If you want to be certain of them not failing, use only letters, digits and spaces.
+3. We have created a couple of custom Form fields in order to maintain the Sitecore context, in a perfect world this would have been handled differently.
 
 ## The limitations
 Given it's a 24 hour Hackathon, and we started from scratch, of course it's a limited site. Our initial brainstorm resulted in many great ideas, such as 
-- the possibility of sharing inspiration and content across different usergroups and events. To facilitate better and more frequent events. 
+- The possibility of sharing inspiration and content across different usergroups and events. To facilitate better and more frequent events. 
 - Interest in subjects and willingness of miles to travel, enabling the site to push events to the members
-- ...
+- Using Marketing Automation to remind members about events as well as remind organizers it's been awhile since they last hosted an event or simply for notifying users on waiting list that they got an spot at an event. There's a multitude of possibilities with this.
 
 We would have loved to dig further into one of these more elaborate functionalities, but as the criteria of the judging is on a complete solution, we had to start with the creating and joining of events, and that's as far as we got.
 
