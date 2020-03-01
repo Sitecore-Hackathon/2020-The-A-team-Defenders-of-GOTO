@@ -46,6 +46,12 @@ SharedFields:
           par=""
           ph="nav-auth"
           uid="{E96B55A6-001F-465E-B9AA-4BEDDF605FDB}" />
+        <r
+          ds=""
+          id="{05813BC9-850A-4147-85EC-568865060E67}"
+          par=""
+          ph="body"
+          uid="{F4F389F8-B506-4371-A845-E84F7C6AD87B}" />
       </d>
     </r>
 Languages:
@@ -56,3 +62,17 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20200229T023217Z
+    - ID: "4602b663-9dd8-47ba-9759-d6f8e100bd62"
+      Hint: Intro
+      Value: Welcome to GOTO UserGroup
+    - ID: "a24abafd-c24a-4264-9391-e042e5c3f3e1"
+      Hint: Description
+      Value: |
+        <p><img alt="" height="184" width="541" src="-/media/25E254B7C06245B9860A9B5A8A304536.ashx" /></p>
+        <p>&nbsp;</p>
+        <p><strong>Please go ahead and <a href="~/link.aspx?_id=394CE1146B624E7AAE6774FA2EE23242&amp;_z=z">register!</a>&nbsp;</strong></p>
+        <p>Your in the right place if:</p>
+        <p>- You're looking for <a href="~/link.aspx?_id=8EDAE83BBB1149FF831D7EA394C9738C&amp;_z=z">Sitecore user groups</a>, and</p>
+        <p>- You're looking to start hosting your own Sitecore user groups</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>

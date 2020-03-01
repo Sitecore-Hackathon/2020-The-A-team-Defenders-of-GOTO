@@ -20,8 +20,6 @@ SharedFields:
   Hint: Manager Roots
   Type: Treelist
   Value: |
-    {CD701D31-D791-4B44-851E-2396682612C3}
-    {CD701D31-D791-4B44-851E-2396682612C3}
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 300

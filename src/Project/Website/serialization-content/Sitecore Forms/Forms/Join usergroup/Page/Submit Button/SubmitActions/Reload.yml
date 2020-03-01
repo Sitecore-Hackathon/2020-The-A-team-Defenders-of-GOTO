@@ -1,0 +1,25 @@
+﻿---
+ID: "e6a99075-7860-41da-8dcc-cbcafc16a987"
+Parent: "a0cec5bf-cc8c-47a1-83b6-7c53d63131e1"
+Template: "05fe45d4-b9c7-40de-b767-7c5abe7119f9"
+Path: /sitecore/Forms/Join usergroup/Page/Submit Button/SubmitActions/Reload
+DB: master
+SharedFields:
+- ID: "abc57b6d-5542-4ab9-a889-106225a032e6"
+  Hint: Submit Action
+  Value: "{D54E9DC0-C499-4FC8-B924-CDB24818D790}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T231140Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

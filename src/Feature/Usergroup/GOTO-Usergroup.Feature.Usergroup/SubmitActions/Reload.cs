@@ -1,32 +1,32 @@
 ﻿using GOTO_Usergroup.Foundation.XConnect;
 using GOTO_Usergroup.Foundation.XConnect.Interface;
 using Microsoft.Extensions.DependencyInjection;
+using Sitecore.Configuration;
+using Sitecore.Data;
+using Sitecore.Data.Items;
 using Sitecore.DependencyInjection;
 using Sitecore.ExperienceForms.Models;
 using Sitecore.ExperienceForms.Mvc.Models.Fields;
 using Sitecore.ExperienceForms.Processing;
 using Sitecore.ExperienceForms.Processing.Actions;
+using Sitecore.SecurityModel;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace GOTO_Usergroup.Feature.Usergroup.SubmitActions
 {
-    public class LeaveList : SubmitActionBase<string>
+    public class Reload : SubmitActionBase<string>
     {
-        private IXConnectService _xconnectService;
-
-        public LeaveList(ISubmitActionData submitActionData) : base(submitActionData)
+        public Reload(ISubmitActionData submitActionData) : base(submitActionData)
         {
-            _xconnectService = ServiceLocator.ServiceProvider.GetService<IXConnectService>();
         }
 
         protected override bool Execute(string data, FormSubmitContext formSubmitContext)
         {
-            var userGroupId = Guid.Parse(((StringInputViewModel)formSubmitContext.Fields.FirstOrDefault(f => f.Name == "ListId")).Value);
-            var email = Sitecore.Analytics.Tracker.Current.Contact.Identifiers.FirstOrDefault(i => i.Source == Constants.XConnectSourceName)?.Identifier;
-            _xconnectService.Unsubscribe(email, userGroupId);
-            System.Threading.Thread.Sleep(2000);
-
+            var itemId = ((StringInputViewModel)formSubmitContext.Fields.FirstOrDefault(f => f.Name == "ItemId")).Value;
+            formSubmitContext.RedirectUrl = Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(itemId));
+            formSubmitContext.RedirectOnSuccess = true;
             return true;
         }
 

@@ -78,6 +78,7 @@
     <Content Include="Views\Feature\Navigation\NavigationLogin.cshtml" />
     <Content Include="Views\web.config" />
     <Content Include="Views\Feature\Navigation\Accordion.cshtml" />
+    <Content Include="Views\Feature\Navigation\TextIntro.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

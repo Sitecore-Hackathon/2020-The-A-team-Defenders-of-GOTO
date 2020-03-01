@@ -26,6 +26,7 @@ namespace GOTO_Usergroup.Feature.Usergroup.SubmitActions
             var userGroupId = Guid.Parse(((StringInputViewModel)formSubmitContext.Fields.FirstOrDefault(f => f.Name == "ListId")).Value);
             var email = Sitecore.Analytics.Tracker.Current.Contact.Identifiers.FirstOrDefault(i => i.Source == Constants.XConnectSourceName)?.Identifier;
             _xconnectService.SubscribeContact(email, new List<Guid> { userGroupId });
+            System.Threading.Thread.Sleep(2000);
 
             return true;
         }
