@@ -45,6 +45,7 @@ Unfortunately we have been experiencing a few bugs which we have not been able t
 1. As mentioned earlier, we're having issues with EXM sending messages through Sendgrid - at least to our accounts. We can see that Sendgrid receives the messages.
 2. The forms are having issues with several special case characters. If you want to be certain of them not failing, use only letters, digits and spaces.
 3. We have created a couple of custom Form fields in order to maintain the Sitecore context, in a perfect world this would have been handled differently.
+4. Not technically a bug - but this does not meet the requirements of a standard CD deployment, as the end user creates Marketing Lists as well as items on the master database, which would not be available in a proper security hardened solution. We chose this way in order to get further with functionality rather than implementing the "proxy".
 
 ## The limitations
 Given it's a 24 hour Hackathon, and we started from scratch, of course it's a limited site. Our initial brainstorm resulted in many great ideas, such as 
