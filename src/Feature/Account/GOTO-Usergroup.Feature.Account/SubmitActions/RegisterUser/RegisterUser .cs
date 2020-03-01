@@ -73,7 +73,9 @@ namespace GOTO_Usergroup.Feature.Account.SubmitActions.RegisterUser
                 user.Profile.FullName = name;
                 user.Profile.Save();
 
+                //Identify the contact in XDB
                 Sitecore.Analytics.Tracker.Current.Session.IdentifyAs(Constants.XConnectSourceName, email);
+                //Save the email and name to XDB
                 _xconnectService.SaveContactDetails(email, name);
             }
             catch (Exception ex)
